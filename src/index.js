@@ -18,7 +18,7 @@ ReactDOM.render(
       </div>
     </header>
     <PortfolioContent data={data} />
-    <SiteFooter />
+    <SiteFooter data={data} />
   </React.StrictMode>,
   document.getElementById("root")
 );

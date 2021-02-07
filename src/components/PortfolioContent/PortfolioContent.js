@@ -1,6 +1,7 @@
 import React from "react";
 import CategorySection from "./CategorySection";
 import ImageAndCaption from "./ImageAndCaption";
+import ContactForm from "../ContactForm/ContactForm";
 
 function PortfolioContent({ data }) {
   const caption = (
@@ -63,37 +64,7 @@ function PortfolioContent({ data }) {
 
       <ImageAndCaption title="About" caption={caption} data={data} />
 
-      <article id="contact" data-nav="contact">
-        <header className="category-header">
-          <h1 className="category-title">Contact</h1>
-        </header>
-        <hr />
-
-        <div className="form-container">
-          <form action="https://formspree.io/f/xaylvnkn" method="POST">
-            <label for="name">Name</label>
-            <input id="name" type="text" name="name" required />
-            <br />
-
-            <label for="email">Email</label>
-            <input id="email" type="text" name="email" required />
-            <br />
-
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              maxlength="350"
-              required
-            ></textarea>
-            <br />
-
-            <div className="flex-container">
-              <button type="submit">Send</button>
-            </div>
-          </form>
-        </div>
-      </article>
+      <ContactForm title="Contact" />
     </main>
   );
 }

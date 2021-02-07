@@ -1,47 +1,29 @@
 import React from "react";
 
-function SiteFooter() {
+function SiteFooter({ data }) {
+  // Get socials
+  const socialList = Object.keys(data["Socials"]);
+  const socialUrls = Object.values(data["Socials"]);
+
+  // Build list
+  const socialLinks = socialList.map((social, index) => {
+    const href = data["Socials"][social];
+    const title = `Austin on ${social}`;
+    const className = `fa fa-${social.toLowerCase()}`;
+    return (
+      <li key={index}>
+        <a href={href} title={title} target="_blank">
+          <i className={className}></i>
+        </a>
+      </li>
+    );
+  });
+
+  // Build component and return
   return (
     <footer id="site-footer">
       <div className="container">
-        <ul className="links flex-icons">
-          <li>
-            <a
-              href="https://github.com/austinthaldorfhuelsbeck"
-              title="Austin on GitHub"
-              target="_blank"
-            >
-              <i className="fa fa-github-alt"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/blackmetallotus"
-              title="Austin on Twitter"
-              target="_blank"
-            >
-              <i className="fa fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.facebook.com/austin.huelsbeck"
-              title="Austin on Facebook"
-              target="_blank"
-            >
-              <i className="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/austinhuelsbeck"
-              title="Austin on LinkedIn"
-              target="_blank"
-            >
-              <i className="fa fa-linkedin"></i>
-            </a>
-          </li>
-        </ul>
+        <ul className="links flex-icons">{socialLinks}</ul>
 
         <div className="email-info flex-container">
           <a href="mailto:austinthaldorfhuelsbeck@gmail.com">

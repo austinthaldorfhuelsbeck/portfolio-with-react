@@ -1,4 +1,5 @@
 import React from "react";
+import CategoryHeader from "../CategoryHeader/CategoryHeader";
 
 function CategorySection({ title, subtitle, data }) {
   // Find the list items
@@ -24,12 +25,7 @@ function CategorySection({ title, subtitle, data }) {
       id="{title.toLowerCase}"
       data-nav="{title.toLowerCase}"
     >
-      <header className="category-header">
-        <h1 className="category-title">{title}</h1>
-        <hr />
-        <p>{subtitle}</p>
-      </header>
-
+      <CategoryHeader title={title} subtitle={subtitle} />
       <ul className="category-thumbnails flex-container">{items}</ul>
     </section>
   );

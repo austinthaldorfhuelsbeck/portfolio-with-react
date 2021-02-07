@@ -264,8 +264,8 @@ footer ul { padding: 0; }
 }
 
 .inset-image {
-  border-radius: 1em;
-  width: 80%;
+  border-radius: .5em;
+  width: 90%;
   margin: 2rem 0;
 }
 
