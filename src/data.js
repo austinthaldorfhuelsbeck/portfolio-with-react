@@ -1,27 +1,35 @@
 export const data = {
   Home: {
     url: "./",
+    photoUrl:
+      "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/huelsbeck-headshot.jpg",
+    photoTitle: "Photo by: Henry Tieu Photography",
   },
   Sites: {
     url: "./#sites",
     photoUrl: "",
-    sites: [
+    Sites: [
       {
         name: "Black Static Visuals",
-        url: "",
-        photoUrl: "",
+        url:
+          "https://austinthaldorfhuelsbeck.github.io/AustinThaldorfHuelsbeck-projects/blackstaticvisuals.html",
+        photoUrl:
+          "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/black-static.jpg",
         technologies: ["HTML", "CSS"],
       },
       {
         name: "Austin + Emily Creative",
-        url: "",
-        photoUrl: "",
+        url:
+          "https://austinthaldorfhuelsbeck.github.io/AustinThaldorfHuelsbeck-projects/austinandemily.html",
+        photoUrl:
+          "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/austin-emily.jpg",
         technologies: ["jQuery", "Flex", "SCSS"],
       },
       {
         name: "PawPaw Vintage",
         url: "",
-        photoUrl: "",
+        photoUrl:
+          "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg",
         technologies: ["Shopify", "React"],
       },
     ],
@@ -29,23 +37,27 @@ export const data = {
   Apps: {
     url: "./#apps",
     photoUrl: "",
-    apps: [
+    Apps: [
       {
         name: "Thinkful",
         url: "",
-        photoUrl: "",
+        photoUrl:
+          "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg",
         technologies: ["React", "jQuery", "Node", "Express", "PostgreSQL"],
       },
       {
         name: "Arena Decklist Database",
         url: "",
-        photoUrl: "",
+        photoUrl:
+          "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg",
         technologies: ["React", "Node", "Express"],
       },
     ],
   },
   About: {
     url: "./#about",
+    imageUrl:
+      "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/Emily-Austin-Elopement-94.jpg",
   },
   Contact: {
     url: "./#contact",
