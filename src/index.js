@@ -1,11 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import SiteNav from "./components/SiteNav/SiteNav";
+import SiteHeader from "./components/SiteHeader/SiteHeader";
+import PortfolioContent from "./components/PortfolioContent/PortfolioContent";
+import SiteFooter from "./components/SiteFooter/SiteFooter";
 import "./index.css";
-import App from "./App";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SiteNav />
+    <SiteHeader />
+    <PortfolioContent />
+    <SiteFooter />
   </React.StrictMode>,
   document.getElementById("root")
 );
