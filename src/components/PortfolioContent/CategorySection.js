@@ -17,6 +17,7 @@ function CategorySection({ title, subtitle, data }) {
     </li>
   ));
 
+  // Build the section and return
   return (
     <section
       className="category-section"

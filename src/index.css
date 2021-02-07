@@ -127,8 +127,6 @@ nav ul li:last-child a {
 
 /* --- Main Content --- */
 
-#headshot { padding: 2rem 0; }
-
 .category-thumbnails { padding: 2rem 0; }
 
 .category-thumbnails li {
@@ -268,6 +266,7 @@ footer ul { padding: 0; }
 .inset-image {
   border-radius: 1em;
   width: 80%;
+  margin: 2rem 0;
 }
 
 /* --- Media Queries (Desktop) --- */
