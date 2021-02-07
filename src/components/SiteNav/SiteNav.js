@@ -1,40 +1,24 @@
 import React from "react";
+import { data } from "../../data";
+
+const pages = Object.keys(data);
+const pageData = Object.values(data);
+
+const pagesList = pages.map((page, index) => {
+  const href = pageData[index].url;
+  return (
+    <li key={index}>
+      <a title={page.toLowerCase} href={href}>
+        {page}
+      </a>
+    </li>
+  );
+});
 
 function SiteNav() {
   return (
     <nav id="site-nav">
-      <ul id="menu">
-        <li>
-          <a title="home" href="./">
-            Home
-          </a>
-        </li>
-        <li>
-          <a title="sites" href="./#sites">
-            Sites
-          </a>
-        </li>
-        <li>
-          <a title="apps" href="./#apps">
-            Apps
-          </a>
-        </li>
-        <li>
-          <a title="about" href="./#about">
-            About
-          </a>
-        </li>
-        <li>
-          <a title="contact" href="./#contact">
-            Contact
-          </a>
-        </li>
-        <li>
-          <a title="resume" href="./resume.html">
-            Resume
-          </a>
-        </li>
-      </ul>
+      <ul id="menu">{pagesList}</ul>
     </nav>
   );
 }
