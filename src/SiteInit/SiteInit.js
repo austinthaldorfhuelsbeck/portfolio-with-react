@@ -1,17 +1,17 @@
 import React from "react";
 
-function PortfolioIntro({ data }) {
-  // find the headshot url and title
-  const href = data.Home.photoUrl;
-  const title = data.Home.photoTitle;
+export default function SiteInit() {
+  const url =
+    "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/huelsbeck-headshot.jpg";
+  const title = "Photo by: Henry Tieu Photography";
 
   return (
     <div id="portfolio-intro">
       <div id="header-photo">
-        <img src={href} title={title} className="circle-img" />
+        <img src={url} title={title} className="circle-img" />
       </div>
 
-      <div className="header-intro" data-nav="home">
+      <div className="header-intro">
         <p>Welcome to my portfolio!</p>
         <p>I'm a web developer with a background in video and design.</p>
         <p>
@@ -22,5 +22,3 @@ function PortfolioIntro({ data }) {
     </div>
   );
 }
-
-export default PortfolioIntro;

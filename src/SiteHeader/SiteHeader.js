@@ -1,6 +1,6 @@
 import React from "react";
 
-function SiteHeader() {
+export default function SiteHeader() {
   return (
     <hgroup className="header-title">
       <h1>Austin Thaldorf-Huelsbeck</h1>
@@ -8,5 +8,3 @@ function SiteHeader() {
     </hgroup>
   );
 }
-
-export default SiteHeader;

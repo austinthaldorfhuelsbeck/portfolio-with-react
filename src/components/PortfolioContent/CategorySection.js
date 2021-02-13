@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CategoryHeader from "../CategoryHeader/CategoryHeader";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function CategorySection({ title, subtitle, data }) {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   // Find the list items
   const itemsList = data[title][title];
   // Build the list element
   const items = itemsList.map((item, index) => (
-    <li key={index}>
+    <li key={index} data-aos="fade-up" className="category-item">
       <a title={item.name} href={item.url}>
         <img
           className="darkened circle-img md-img"

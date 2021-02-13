@@ -5,7 +5,7 @@ import ContactForm from "../ContactForm/ContactForm";
 
 function PortfolioContent({ data }) {
   const caption = (
-    <div className="about-caption">
+    <div className="about-caption" data-aos="fade-up">
       <p>
         I live up among the pines in beautiful Seattle, WA. During the day, I
         create content for the web as a part of a marketing team for a

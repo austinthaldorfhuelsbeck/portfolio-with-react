@@ -1,13 +1,13 @@
 import React from "react";
 
-function SiteFooter({ data }) {
+function SiteFooter({ socials }) {
   // Get socials
-  const socialList = Object.keys(data["Socials"]);
-  const socialUrls = Object.values(data["Socials"]);
+  const socialList = Object.keys(socials);
+  const socialUrls = Object.values(socials);
 
   // Build list
   const socialLinks = socialList.map((social, index) => {
-    const href = data["Socials"][social];
+    const href = socialUrls[index];
     const title = `Austin on ${social}`;
     const className = `fa fa-${social.toLowerCase()}`;
     return (

@@ -66,10 +66,11 @@ export const data = {
   Resume: {
     url: "./resume.html",
   },
-  Socials: {
-    GitHub: "https://github.com/austinthaldorfhuelsbeck",
-    Twitter: "https://twitter.com/blackmetallotus",
-    Facebook: "https://www.facebook.com/austin.huelsbeck",
-    LinkedIn: "https://www.linkedin.com/in/austinhuelsbeck",
-  },
+};
+
+export const socials = {
+  GitHub: "https://github.com/austinthaldorfhuelsbeck",
+  Twitter: "https://twitter.com/blackmetallotus",
+  Facebook: "https://www.facebook.com/austin.huelsbeck",
+  LinkedIn: "https://www.linkedin.com/in/austinhuelsbeck",
 };

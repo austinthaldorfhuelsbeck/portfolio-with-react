@@ -16,6 +16,7 @@ function ImageAndCaption({ title, caption, data }) {
           alt={title}
           title={imgTitle}
           className="inset-image"
+          data-aos="fade-up"
         />
       </div>
       {caption}

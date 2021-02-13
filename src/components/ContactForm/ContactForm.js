@@ -6,7 +6,7 @@ function ContactForm({ title }) {
     <article id="contact" data-nav="contact">
       <CategoryHeader title={title} />
 
-      <div className="form-container">
+      <div className="form-container" data-aos="fade-up">
         <form action="https://formspree.io/f/xaylvnkn" method="POST">
           <label for="name">Name</label>
           <input id="name" type="text" name="name" required />

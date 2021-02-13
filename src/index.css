@@ -6,7 +6,6 @@ body {
   font-size: 100%;
   font-family: "Titillium Web", Raleway, sans-serif;
   color: #fff;
-  background: linear-gradient(#3c4457, #222733);
   padding: 1rem;
 }
 
@@ -102,7 +101,6 @@ nav ul li:last-child a {
   font-weight: 100;
   line-height: 1;
   font-size: 10vw;
-  padding-top: 1rem;
 }
 
 .header-title h2 {
@@ -110,8 +108,6 @@ nav ul li:last-child a {
   font-size: 1rem;
   line-height: 2;
 }
-
-#site-header { padding-top: 2rem; }
 
 #header-photo {
   width: 10em;
