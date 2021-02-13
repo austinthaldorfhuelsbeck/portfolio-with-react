@@ -1,18 +1,18 @@
 import React from "react";
 
-export default function SiteNav({ pages }) {
-  const pagesList = pages.map((page, index) => {
+export default function SiteNav(props) {
+  const pagesList = props.pages.map((page, index) => {
+    const title =
+      props.currentPage === page ? <strong>{page}</strong> : <em>{page}</em>;
     return (
       <li key={index}>
-        <a title={page.toLowerCase} href="">
-          {page}
-        </a>
+        <button onClick={props.setCurrentPage(page)}>{title}</button>
       </li>
     );
   });
 
   return (
-    <nav id="site-nav" data-aos="fade-up">
+    <nav id="site-nav">
       <ul id="menu">{pagesList}</ul>
     </nav>
   );
