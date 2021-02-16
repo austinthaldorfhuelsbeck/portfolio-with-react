@@ -21,6 +21,7 @@ export default function App() {
     setCurrentPage(pageTitle);
   }
 
+  //// DATA ////
   const sitesItems = [
     {
       name: "Black Static Visuals",
@@ -46,7 +47,6 @@ export default function App() {
       technologies: ["Shopify", "React"],
     },
   ];
-
   const appsItems = [
     {
       name: "Thinkful",
@@ -63,6 +63,55 @@ export default function App() {
       technologies: ["React", "Node", "Express"],
     },
   ];
+  const caption = (
+    <div className="about-caption">
+      <p>
+        I live up among the pines in beautiful Seattle, WA. During the day, I
+        create content for the web as a part of a marketing team for a
+        non-profit. In the evenings, I'm studying web development as a part of{" "}
+        <a href="https://www.thinkful.com" target="_blank">
+          Thinkful
+        </a>
+        's Full Stack Engineering program.
+      </p>
+
+      <p>
+        Building, creating, and fine-tuning is where I feel at home. Whether
+        it's solving a design challenge, or editing a feature film, I've always
+        gravitated towards the problem-solving side of creative fields. Learning
+        to code has brought that problem-solving, engineering-mindedness into
+        full focus. My training in digital marketing &amp; filmmaking inform the
+        design side&mdash;Who is this for? How will they experience it? How will
+        they <em>find</em> it?&mdash;while my passion for math, logic &amp;
+        engineering informs the coding side. (Those Calculus credits{" "}
+        <strong>did</strong> come in handy after all!)
+      </p>
+
+      <p>
+        While building websites and interactive apps alone has been rewarding,
+        my goal is to be able to create within a team development setting as
+        soon as possible. My experience has taught me that collaboration is the
+        key to creating amazing results and sharpening your own skills. I never
+        like to be the smartest person in the room&mdash;I am always looking for
+        the next opportunity to learn, and being around great programmers is the
+        best way to make that happen.
+      </p>
+
+      <p>
+        Learning HTML, CSS, and JavaScript has already allowed me to design a
+        handful of basic websites. I aim to design more apps to live on the web
+        as I continue my education. With tools like React, Node &amp; Express, I
+        plan to design &amp; build fully-functional webapps from conception to
+        delivery.
+      </p>
+    </div>
+  );
+  const aboutImgData = {
+    url: "./#about",
+    imageUrl:
+      "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/Emily-Austin-Elopement-94.jpg",
+    imageTitle: "Photo by: Henry Tieu Photography",
+  };
 
   return (
     <div className="container" data-aos="fade-up">
@@ -79,7 +128,7 @@ export default function App() {
         subtitle="Apps that I've designed, on the Internet or otherwise."
         itemsList={appsItems}
       />
-      {/* <ImageAndCaption title="About" caption={caption} data={data} /> */}
+      <ImageAndCaption title="About" caption={caption} data={aboutImgData} />
       <ContactForm title="Contact" />
     </div>
   );

@@ -3,8 +3,8 @@ import CategoryHeader from "../CategorySection/CategoryHeader/CategoryHeader";
 
 function ImageAndCaption({ title, caption, data }) {
   // Find the page data
-  const imgSrc = data[title].imageUrl;
-  const imgTitle = data[title].imageTitle;
+  const imgSrc = data.imageUrl;
+  const imgTitle = data.imageTitle;
 
   // Build the section and return
   return (

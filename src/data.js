@@ -54,12 +54,7 @@ export const data = {
       },
     ],
   },
-  About: {
-    url: "./#about",
-    imageUrl:
-      "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/Emily-Austin-Elopement-94.jpg",
-    imageTitle: "Photo by: Henry Tieu Photography",
-  },
+  About: ,
   Contact: {
     url: "./#contact",
   },
