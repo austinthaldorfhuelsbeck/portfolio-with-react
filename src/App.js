@@ -12,7 +12,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 export default function App() {
-  const pages = ["sites", "apps", "about", "contact", "resume", "blog"];
+  const pages = ["apps", "sites", "about", "contact", "resume", "blog"];
 
   useEffect(() => {
     Aos.init({ duration: 2000 });

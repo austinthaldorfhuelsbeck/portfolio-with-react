@@ -98,6 +98,8 @@ nav li {
   letter-spacing: .1rem;
 }
 
+.active { font-weight: 900; }
+
 /* --- Headers + Titles --- */
 
 .header-title h1,
