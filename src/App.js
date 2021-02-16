@@ -44,7 +44,11 @@ export default function App() {
       technologies: ["Shopify", "React"],
     },
   ];
-  const sitesProps = {};
+  const sitesProps = {
+    title: "Sites",
+    subtitle: "Sites that I've designed that now reside on the Internet.",
+    itemsList: sitesItems,
+  };
   const appsItems = [
     {
       name: "Thinkful",
@@ -61,7 +65,12 @@ export default function App() {
       technologies: ["React", "Node", "Express"],
     },
   ];
-  const caption = (
+  const appsProps = {
+    title: "Apps",
+    subtitle: "Apps that I've designed, on the Internet or otherwise.",
+    itemsList: appsItems,
+  };
+  const aboutImgCaption = (
     <div className="about-caption">
       <p>
         I live up among the pines in beautiful Seattle, WA. During the day, I
@@ -110,6 +119,11 @@ export default function App() {
       "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/Emily-Austin-Elopement-94.jpg",
     imageTitle: "Photo by: Henry Tieu Photography",
   };
+  const aboutProps = {
+    title: "About",
+    caption: aboutImgCaption,
+    data: aboutImgData,
+  };
   const socials = {
     GitHub: "https://github.com/austinthaldorfhuelsbeck",
     Twitter: "https://twitter.com/blackmetallotus",
@@ -124,7 +138,11 @@ export default function App() {
         <SiteNav pages={pages} />
         <div className="content">
           <Route path="/" component={SiteInit} />
-          <CategorySection
+          <Route
+            path="/sites"
+            render={(sitesProps) => <ImageAndCaption {...sitesProps} />}
+          />
+          {/* <CategorySection
             title="Sites"
             subtitle="Sites that I've designed that now reside on the Internet."
             itemsList={sitesItems}
@@ -138,7 +156,7 @@ export default function App() {
             title="About"
             caption={caption}
             data={aboutImgData}
-          />
+          /> */}
           <ContactForm title="Contact" />
         </div>
       </HashRouter>
