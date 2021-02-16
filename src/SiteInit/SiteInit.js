@@ -6,7 +6,7 @@ export default function SiteInit() {
   const title = "Photo by: Henry Tieu Photography";
 
   return (
-    <div id="portfolio-intro">
+    <div id="portfolio-intro" data-aos="fade-up">
       <div id="header-photo">
         <img src={url} title={title} className="circle-img" />
       </div>

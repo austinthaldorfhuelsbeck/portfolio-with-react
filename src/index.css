@@ -1,6 +1,10 @@
 /* --- Defaults for page body content --- */
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  background: linear-gradient(#3c4457, #292e3b);
+}
 
 body, button {
   font-size: 100%;
@@ -10,8 +14,7 @@ body, button {
   border: none;
 }
 
-body {
-  
+body { 
   padding: 1rem;
 }
 

@@ -10,15 +10,17 @@ function ImageAndCaption({ title, caption, data }) {
   return (
     <article id={title.toLowerCase()} data-nav={title.toLowerCase()}>
       <CategoryHeader title={title} />
-      <div className="flex-container">
-        <img
-          src={imgSrc}
-          alt={title}
-          title={imgTitle}
-          className="inset-image"
-        />
+      <div data-aos="fade-up">
+        <div className="flex-container">
+          <img
+            src={imgSrc}
+            alt={title}
+            title={imgTitle}
+            className="inset-image"
+          />
+        </div>
+        {caption}
       </div>
-      {caption}
     </article>
   );
 }

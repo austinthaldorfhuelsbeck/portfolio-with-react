@@ -24,7 +24,9 @@ function CategorySection({ title, subtitle, itemsList }) {
       data-nav="{title.toLowerCase}"
     >
       <CategoryHeader title={title} subtitle={subtitle} />
-      <ul className="category-thumbnails flex-container">{items}</ul>
+      <ul className="category-thumbnails flex-container" data-aos="fade-up">
+        {items}
+      </ul>
     </section>
   );
 }

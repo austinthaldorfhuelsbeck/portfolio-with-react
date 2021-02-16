@@ -46,7 +46,7 @@ export default function App() {
   ];
   const appsItems = [
     {
-      name: "Thinkful",
+      name: "Thinkful Projects",
       url: "",
       photoUrl:
         "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg",
@@ -122,7 +122,7 @@ export default function App() {
   };
 
   return (
-    <div className="container" data-aos="fade-up">
+    <div className="container">
       <HashRouter>
         <SiteHeader />
         <SiteNav pages={pages} />
