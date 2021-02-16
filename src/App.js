@@ -12,7 +12,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 export default function App() {
-  const pages = ["Sites", "Apps", "About", "Contact", "Resume", "Blog"];
+  const pages = ["sites", "apps", "about", "contact", "resume", "blog"];
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -44,11 +44,6 @@ export default function App() {
       technologies: ["Shopify", "React"],
     },
   ];
-  const sitesProps = {
-    title: "Sites",
-    subtitle: "Sites that I've designed that now reside on the Internet.",
-    itemsList: sitesItems,
-  };
   const appsItems = [
     {
       name: "Thinkful",
@@ -140,7 +135,14 @@ export default function App() {
           <Route path="/" component={SiteInit} />
           <Route
             path="/sites"
-            render={(sitesProps) => <ImageAndCaption {...sitesProps} />}
+            render={(props) => (
+              <CategorySection
+                {...props}
+                title={`Sites`}
+                subtitle={`Sites that I've designed that now reside on the Internet.`}
+                itemsList={sitesItems}
+              />
+            )}
           />
           {/* <CategorySection
             title="Sites"

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function SiteNav(props) {
   const pagesList = props.pages.map((page, index) => {
-    const link = `/${page.toLowerCase}`;
+    const link = `/${page}`;
     return (
       <li key={index}>
         <NavLink to={link}>{page}</NavLink>
