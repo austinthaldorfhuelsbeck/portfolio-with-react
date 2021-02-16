@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route, NavLink, HashRouter } from "react-router-dom";
+import { Route, HashRouter } from "react-router-dom";
 import SiteHeader from "./SiteHeader/SiteHeader";
 import SiteNav from "./SiteNav/SiteNav";
 import SiteInit from "./SiteInit/SiteInit";
@@ -44,6 +44,7 @@ export default function App() {
       technologies: ["Shopify", "React"],
     },
   ];
+  const sitesProps = {};
   const appsItems = [
     {
       name: "Thinkful",
@@ -119,22 +120,28 @@ export default function App() {
   return (
     <div className="container" data-aos="fade-up">
       <SiteHeader />
-      <SiteNav pages={pages} />
-      {/* <div className="content">
-        <SiteInit />
-        <CategorySection
-          title="Sites"
-          subtitle="Sites that I've designed that now reside on the Internet."
-          itemsList={sitesItems}
-        />
-        <CategorySection
-          title="Apps"
-          subtitle="Apps that I've designed, on the Internet or otherwise."
-          itemsList={appsItems}
-        />
-        <ImageAndCaption title="About" caption={caption} data={aboutImgData} />
-        <ContactForm title="Contact" />
-      </div> */}
+      <HashRouter>
+        <SiteNav pages={pages} />
+        <div className="content">
+          <Route path="/" component={SiteInit} />
+          <CategorySection
+            title="Sites"
+            subtitle="Sites that I've designed that now reside on the Internet."
+            itemsList={sitesItems}
+          />
+          <CategorySection
+            title="Apps"
+            subtitle="Apps that I've designed, on the Internet or otherwise."
+            itemsList={appsItems}
+          />
+          <ImageAndCaption
+            title="About"
+            caption={caption}
+            data={aboutImgData}
+          />
+          <ContactForm title="Contact" />
+        </div>
+      </HashRouter>
       <SiteFooter socials={socials} />
     </div>
   );
