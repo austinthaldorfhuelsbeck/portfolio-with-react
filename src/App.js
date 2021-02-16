@@ -128,11 +128,11 @@ export default function App() {
 
   return (
     <div className="container" data-aos="fade-up">
-      <SiteHeader />
       <HashRouter>
+        <SiteHeader />
         <SiteNav pages={pages} />
         <div className="content">
-          <Route path="/" component={SiteInit} />
+          <Route exact path="/" render={SiteInit} />
           <Route
             path="/sites"
             render={(props) => (
