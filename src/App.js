@@ -21,6 +21,49 @@ export default function App() {
     setCurrentPage(pageTitle);
   }
 
+  const sitesItems = [
+    {
+      name: "Black Static Visuals",
+      url:
+        "https://austinthaldorfhuelsbeck.github.io/AustinThaldorfHuelsbeck-projects/blackstaticvisuals.html",
+      photoUrl:
+        "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/black-static.jpg",
+      technologies: ["HTML", "CSS"],
+    },
+    {
+      name: "Austin + Emily Creative",
+      url:
+        "https://austinthaldorfhuelsbeck.github.io/AustinThaldorfHuelsbeck-projects/austinandemily.html",
+      photoUrl:
+        "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/austin-emily.jpg",
+      technologies: ["jQuery", "Flex", "SCSS"],
+    },
+    {
+      name: "PawPaw Vintage",
+      url: "",
+      photoUrl:
+        "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg",
+      technologies: ["Shopify", "React"],
+    },
+  ];
+
+  const appsItems = [
+    {
+      name: "Thinkful",
+      url: "",
+      photoUrl:
+        "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg",
+      technologies: ["React", "jQuery", "Node", "Express", "PostgreSQL"],
+    },
+    {
+      name: "Arena Decklist Database",
+      url: "",
+      photoUrl:
+        "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg",
+      technologies: ["React", "Node", "Express"],
+    },
+  ];
+
   return (
     <div className="container" data-aos="fade-up">
       <SiteHeader />
@@ -29,14 +72,14 @@ export default function App() {
       <CategorySection
         title="Sites"
         subtitle="Sites that I've designed that now reside on the Internet."
-        data={data}
+        itemsList={sitesItems}
       />
       <CategorySection
         title="Apps"
         subtitle="Apps that I've designed, on the Internet or otherwise."
-        data={data}
+        itemsList={appsItems}
       />
-      <ImageAndCaption title="About" caption={caption} data={data} />
+      {/* <ImageAndCaption title="About" caption={caption} data={data} /> */}
       <ContactForm title="Contact" />
     </div>
   );

@@ -48,25 +48,7 @@ function PortfolioContent({ data }) {
     </div>
   );
 
-  return (
-    <main className="container">
-      <CategorySection
-        title="Sites"
-        subtitle="Sites that I've designed that now reside on the Internet."
-        data={data}
-      />
-
-      <CategorySection
-        title="Apps"
-        subtitle="Apps that I've designed, on the Internet or otherwise."
-        data={data}
-      />
-
-      <ImageAndCaption title="About" caption={caption} data={data} />
-
-      <ContactForm title="Contact" />
-    </main>
-  );
+  return <main className="container"></main>;
 }
 
 export default PortfolioContent;

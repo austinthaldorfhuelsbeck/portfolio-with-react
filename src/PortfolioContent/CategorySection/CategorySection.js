@@ -1,12 +1,10 @@
-import React, { useEffect } from "react";
-import CategoryHeader from "../CategoryHeader/CategoryHeader";
+import React from "react";
+import CategoryHeader from "./CategoryHeader/CategoryHeader";
 
-function CategorySection({ title, subtitle, data }) {
-  // Find the list items
-  const itemsList = data[title][title];
+function CategorySection({ title, subtitle, itemsList }) {
   // Build the list element
   const items = itemsList.map((item, index) => (
-    <li key={index} data-aos="fade-up" className="category-item">
+    <li key={index} className="category-item">
       <a title={item.name} href={item.url}>
         <img
           className="darkened circle-img md-img"

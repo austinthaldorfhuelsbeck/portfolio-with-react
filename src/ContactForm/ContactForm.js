@@ -1,5 +1,5 @@
 import React from "react";
-import CategoryHeader from "../CategoryHeader/CategoryHeader";
+import CategoryHeader from "../PortfolioContent/CategorySection/CategoryHeader/CategoryHeader";
 
 function ContactForm({ title }) {
   return (

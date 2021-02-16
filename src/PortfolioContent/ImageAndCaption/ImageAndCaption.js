@@ -1,5 +1,5 @@
 import React from "react";
-import CategoryHeader from "../../CategoryHeader/CategoryHeader";
+import CategoryHeader from "../CategorySection/CategoryHeader/CategoryHeader";
 
 function ImageAndCaption({ title, caption, data }) {
   // Find the page data
