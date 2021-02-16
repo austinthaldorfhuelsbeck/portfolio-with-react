@@ -34,12 +34,6 @@ function SiteFooter({ socials }) {
         <div className="copyright-info flex-container">
           <p>&copy; 2021 Austin Thaldorf-Huelsbeck</p>
         </div>
-
-        <form className="inline" action="./#site-nav" method="get">
-          <button className="to-top">
-            <i className="fa fa-arrow-up"></i>
-          </button>
-        </form>
       </div>
     </footer>
   );

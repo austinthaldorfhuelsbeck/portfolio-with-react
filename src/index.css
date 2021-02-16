@@ -91,6 +91,8 @@ ul { list-style: none; }
 nav li { 
   padding: 1rem 0 1rem;
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
 }
 
 /* --- Headers + Titles --- */
@@ -203,7 +205,7 @@ form button {
 
 /* --- Footer --- */
 
-footer { padding-top: 8rem; }
+footer { padding-top: 3rem; }
 
 footer ul { padding: 0; }
 
@@ -229,11 +231,6 @@ footer ul { padding: 0; }
 }
 
 .links li { padding: 0.5rem; }
-
-.to-top {
-  display: block;
-  margin: 3rem auto 3rem;
-}
 
 /* --- Custom Classes --- */
 
@@ -282,7 +279,7 @@ footer ul { padding: 0; }
 
   .body { padding: 1.5rem; }
 
-  .nav li { padding: 1rem; }
+  .nav li {padding: 1rem; }
 
   .header-title h1 { font-size: 5vw; }
   .project-intro h1 { font-size: 7vw; }

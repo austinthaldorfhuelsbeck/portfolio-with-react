@@ -60,11 +60,6 @@ export default function App() {
       technologies: ["React", "Node", "Express"],
     },
   ];
-  const appsProps = {
-    title: "Apps",
-    subtitle: "Apps that I've designed, on the Internet or otherwise.",
-    itemsList: appsItems,
-  };
   const aboutImgCaption = (
     <div className="about-caption">
       <p>
