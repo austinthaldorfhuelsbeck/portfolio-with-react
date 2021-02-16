@@ -1,10 +1,9 @@
 import React from "react";
-import CategorySection from "../PortfolioContent/CategorySection";
 
 function CategoryHeader({ title, subtitle = null }) {
-  const subtitleElement = subtitle ? <p>{subtitle}</p> : <></>;
+  const subtitleElement = subtitle ? <p>{subtitle}</p> : <p></p>;
   return (
-    <header className="category-header" data-aos="fade-up">
+    <header className="category-header">
       <h1 className="category-title">{title}</h1>
       <hr />
       {subtitleElement}

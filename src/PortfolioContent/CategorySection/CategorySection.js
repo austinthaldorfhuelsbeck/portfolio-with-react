@@ -1,13 +1,7 @@
 import React, { useEffect } from "react";
 import CategoryHeader from "../CategoryHeader/CategoryHeader";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 function CategorySection({ title, subtitle, data }) {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
-
   // Find the list items
   const itemsList = data[title][title];
   // Build the list element

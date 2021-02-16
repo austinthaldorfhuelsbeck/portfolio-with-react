@@ -1,5 +1,5 @@
 import React from "react";
-import CategoryHeader from "../CategoryHeader/CategoryHeader";
+import CategoryHeader from "../../CategoryHeader/CategoryHeader";
 
 function ImageAndCaption({ title, caption, data }) {
   // Find the page data
@@ -16,7 +16,6 @@ function ImageAndCaption({ title, caption, data }) {
           alt={title}
           title={imgTitle}
           className="inset-image"
-          data-aos="fade-up"
         />
       </div>
       {caption}
