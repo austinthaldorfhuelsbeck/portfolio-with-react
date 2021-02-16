@@ -163,12 +163,15 @@ nav li {
 
 .header-intro,
 .project-content,
-.form-container,
-#about {
+.form-container {
   font-size: 1.2rem;
   width: 100%;
   margin: 3rem auto 0 auto;
 }
+
+#about { margin: 0 auto 0 auto; }
+
+#about p { font-size: 1.2rem; }
 
 .header-intro,
 .project-content { text-align: center; }
@@ -178,8 +181,6 @@ nav li {
 #skills,
 #project-content { text-align: justify; }
 
-/* --- Section Margin --- */
-.category-section { margin: 4rem 0; }
 
 /* --- Contact Form --- */
 

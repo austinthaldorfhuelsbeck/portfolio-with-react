@@ -8,7 +8,7 @@ function ImageAndCaption({ title, caption, data }) {
 
   // Build the section and return
   return (
-    <article id={title.toLowerCase()} data-nav={title.toLowerCase()}>
+    <section id={title.toLowerCase()} data-nav={title.toLowerCase()}>
       <CategoryHeader title={title} />
       <div data-aos="fade-up">
         <div className="flex-container">
@@ -21,7 +21,7 @@ function ImageAndCaption({ title, caption, data }) {
         </div>
         {caption}
       </div>
-    </article>
+    </section>
   );
 }
 
