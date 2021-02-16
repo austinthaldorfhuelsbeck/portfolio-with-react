@@ -144,22 +144,32 @@ export default function App() {
               />
             )}
           />
-          {/* <CategorySection
-            title="Sites"
-            subtitle="Sites that I've designed that now reside on the Internet."
-            itemsList={sitesItems}
+          <Route
+            path="/apps"
+            render={(props) => (
+              <CategorySection
+                {...props}
+                title="Apps"
+                subtitle="Apps that I've designed, on the Internet or otherwise."
+                itemsList={appsItems}
+              />
+            )}
           />
-          <CategorySection
-            title="Apps"
-            subtitle="Apps that I've designed, on the Internet or otherwise."
-            itemsList={appsItems}
+          <Route
+            path="/about"
+            render={(props) => (
+              <ImageAndCaption
+                {...props}
+                title="About"
+                caption={aboutImgCaption}
+                data={aboutImgData}
+              />
+            )}
           />
-          <ImageAndCaption
-            title="About"
-            caption={caption}
-            data={aboutImgData}
-          /> */}
-          <ContactForm title="Contact" />
+          <Route
+            path="/contact"
+            render={(props) => <ContactForm title="Contact" />}
+          />
         </div>
       </HashRouter>
       <SiteFooter socials={socials} />
