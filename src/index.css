@@ -267,9 +267,9 @@ footer ul { padding: 0; }
   margin: 2rem 0;
 }
 
-.tiny-text {
-  font-size: 0.9rem;
-}
+.tiny-text { font-size: 0.9rem; }
+
+.warning { font-size: 0.9rem; color: #bf4b52; }
 
 /* --- Media Queries (Desktop) --- */
 

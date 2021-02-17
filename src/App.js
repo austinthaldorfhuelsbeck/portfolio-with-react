@@ -41,7 +41,7 @@ export default function App() {
       name: "PawPaw Vintage",
       url: "",
       photoUrl:
-        "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg",
+        "https://images.unsplash.com/photo-1560294559-1774a164fb0a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
       technologies: ["Shopify", "React"],
     },
   ];
@@ -50,7 +50,7 @@ export default function App() {
       name: "Thinkful Projects",
       url: "",
       photoUrl:
-        "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQ5dwSyrkBbVBSvGSay2zYubwQjv81KB9hw&usqp=CAU",
       technologies: ["React", "jQuery", "Node", "Express", "PostgreSQL"],
     },
     {
@@ -59,6 +59,13 @@ export default function App() {
       photoUrl:
         "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg",
       technologies: ["React", "Node", "Express"],
+    },
+    {
+      name: "Bug Tracker",
+      url: "",
+      photoUrl:
+        "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg",
+      technologies: ["React", "Node", "Express", "PostgreSQL"],
     },
   ];
   const aboutImgCaption = (
