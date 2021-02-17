@@ -1,5 +1,5 @@
 import React from "react";
-import CategoryHeader from "../CategorySection/CategoryHeader/CategoryHeader";
+import CategoryHeader from "./CategorySection/CategoryHeader/CategoryHeader";
 
 function ImageAndCaption({ title, caption, data }) {
   // Find the page data
@@ -10,8 +10,8 @@ function ImageAndCaption({ title, caption, data }) {
   return (
     <section id={title.toLowerCase()} data-nav={title.toLowerCase()}>
       <CategoryHeader title={title} />
-      <div data-aos="fade-up">
-        <div className="flex-container">
+      <div>
+        <div className="flex-container" data-aos="fade-up">
           <img
             src={imgSrc}
             alt={title}

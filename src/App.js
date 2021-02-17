@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Route, HashRouter } from "react-router-dom";
-import SiteHeader from "./SiteHeader/SiteHeader";
-import SiteNav from "./SiteNav/SiteNav";
-import SiteInit from "./SiteInit/SiteInit";
-import CategorySection from "./PortfolioContent/CategorySection/CategorySection";
-import ImageAndCaption from "./PortfolioContent/ImageAndCaption/ImageAndCaption";
-import ContactForm from "./ContactForm/ContactForm";
-import SiteFooter from "./SiteFooter/SiteFooter";
+import SiteHeader from "./Components/SiteHeader";
+import SiteNav from "./Components/SiteNav";
+import SiteInit from "./Components/SiteInit";
+import CategorySection from "./Components/CategorySection/CategorySection";
+import ImageAndCaption from "./Components/ImageAndCaption";
+import ContactForm from "./Components/ContactForm";
+import SiteFooter from "./Components/SiteFooter";
+import Resume from "./JSX/Resume";
 import "./index.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -62,7 +63,7 @@ export default function App() {
   ];
   const aboutImgCaption = (
     <div className="about-caption">
-      <p>
+      <p data-aos="fade-up">
         I live up among the pines in beautiful Seattle, WA. During the day, I
         create content for the web as a part of a marketing team for a
         non-profit. In the evenings, I'm studying web development as a part of{" "}
@@ -72,7 +73,7 @@ export default function App() {
         's Full Stack Engineering program.
       </p>
 
-      <p>
+      <p data-aos="fade-up">
         Building, creating, and fine-tuning is where I feel at home. Whether
         it's solving a design challenge, or editing a feature film, I've always
         gravitated towards the problem-solving side of creative fields. Learning
@@ -84,7 +85,7 @@ export default function App() {
         <strong>did</strong> come in handy after all!)
       </p>
 
-      <p>
+      <p data-aos="fade-up">
         While building websites and interactive apps alone has been rewarding,
         my goal is to be able to create within a team development setting as
         soon as possible. My experience has taught me that collaboration is the
@@ -94,7 +95,7 @@ export default function App() {
         best way to make that happen.
       </p>
 
-      <p>
+      <p data-aos="fade-up">
         Learning HTML, CSS, and JavaScript has already allowed me to design a
         handful of basic websites. I aim to design more apps to live on the web
         as I continue my education. With tools like React, Node &amp; Express, I
@@ -165,6 +166,7 @@ export default function App() {
             path="/contact"
             render={(props) => <ContactForm title="Contact" />}
           />
+          <Route path="/resume" render={Resume} />
         </div>
       </HashRouter>
       <SiteFooter socials={socials} />

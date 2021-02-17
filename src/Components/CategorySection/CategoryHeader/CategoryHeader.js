@@ -1,6 +1,6 @@
 import React from "react";
 
-function CategoryHeader({ title, subtitle = null }) {
+export default function CategoryHeader({ title, subtitle = null }) {
   const subtitleElement = subtitle ? <p>{subtitle}</p> : <p></p>;
   return (
     <header className="category-header">
@@ -10,5 +10,3 @@ function CategoryHeader({ title, subtitle = null }) {
     </header>
   );
 }
-
-export default CategoryHeader;
