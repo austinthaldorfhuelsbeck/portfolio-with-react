@@ -41,7 +41,7 @@ export default function App() {
       name: "PawPaw Vintage",
       url: "",
       photoUrl:
-        "https://austinthaldorfhuelsbeck.github.io/portfolio-with-react/img/denim.jpg",
+        "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/denim.jpg",
       technologies: ["Shopify", "React"],
     },
   ];
