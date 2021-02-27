@@ -14,37 +14,40 @@ import "aos/dist/aos.css";
 
 export default function App() {
   const data = require("./data.json");
-  const pages = Object.keys(data);
 
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
 
   //// DATA ////
+  const appsSubtitle = data.apps.subtitle;
   const appsItems = data.apps.appsItems;
+  const sitesSubtitle = data.apps.subtitle;
   const sitesItems = data.sites.sitesItems;
   const aboutImgData = data.about;
 
-  //// PROPS ////
-  const sitesProps = {
-    title: "sites",
-    subtitle: "Sites that I've designed that now reside on the Internet.",
-    itemsList: sitesItems,
-  };
-  const appsProps = {
-    title: "apps",
-    subtitle: "Apps that I've designed, on the Internet or otherwise.",
-    itemsList: appsItems,
-  };
-  const aboutProps = {
-    title: "about",
-    data: aboutImgData,
-  };
+  const pages = Object.keys(data);
   const socials = {
     GitHub: "https://github.com/austinthaldorfhuelsbeck",
     Twitter: "https://twitter.com/blackmetallotus",
     Facebook: "https://www.facebook.com/austin.huelsbeck",
     LinkedIn: "https://www.linkedin.com/in/austinhuelsbeck",
+  };
+
+  //// PROPS ////
+  const appsProps = {
+    title: "apps",
+    subtitle: appsSubtitle,
+    itemsList: appsItems,
+  };
+  const sitesProps = {
+    title: "sites",
+    subtitle: sitesSubtitle,
+    itemsList: sitesItems,
+  };
+  const aboutProps = {
+    title: "about",
+    data: aboutImgData,
   };
 
   return (
