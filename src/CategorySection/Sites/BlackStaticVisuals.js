@@ -9,7 +9,7 @@ export default function BlackStaticVisuals() {
       >
         <div id="screenshot" class="flex-container" data-aos="fade-up">
           <img
-            src="img/bsv-screenshot.jpg"
+            src="/src/CategorySection/Sites/black-static.jpg"
             alt="Black Static Visuals"
             title="Black Static Visuals"
             class="inset-image"

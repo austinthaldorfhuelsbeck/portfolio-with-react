@@ -5,7 +5,6 @@ import Header from "./Header/Header";
 import Home from "./Home/Home";
 import CategorySection from "./CategorySection/CategorySection";
 import About from "./About/About";
-import Contact from "./Contact/Contact";
 import Resume from "./Resume/Resume";
 import Blog from "./Blog/Blog";
 import Footer from "./Footer/Footer";
@@ -14,7 +13,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 export default function App() {
-  const pages = ["apps", "sites", "about", "contact", "resume", "blog"];
+  const pages = ["apps", "sites", "about", "resume", "blog"];
 
   useEffect(() => {
     Aos.init({ duration: 1500 });
@@ -151,9 +150,6 @@ export default function App() {
           </Route>
           <Route path="/about">
             <About {...aboutProps} />
-          </Route>
-          <Route path="/contact">
-            <Contact title="Contact" />
           </Route>
           <Route path="/resume">
             <Resume />

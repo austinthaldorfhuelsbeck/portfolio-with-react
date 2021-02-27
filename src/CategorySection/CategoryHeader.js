@@ -5,9 +5,9 @@ export default function CategoryHeader({ title, subtitle = null }) {
   const subtitleElement = subtitle ? <p>{subtitle}</p> : <p></p>;
   return (
     <header className="category-header">
-      <Link to={`/${title}`}>
-        <h1 className="category-title">{title}</h1>
-      </Link>
+      <h1 className="category-title">
+        <Link to={`/${title}`}>{title}</Link>
+      </h1>
       <hr />
       {subtitleElement}
     </header>
