@@ -1,15 +1,18 @@
 import React from "react";
-import { Link, Switch, Route } from "react-router-dom";
+import { Link, Switch, Route, useRouteMatch } from "react-router-dom";
 import CategoryHeader from "./CategoryHeader";
 
 import BlackStaticVisuals from "./Sites/BlackStaticVisuals";
-import Thinkful from "./Apps/Thinkful";
 
-function CategorySection({ title, url, subtitle, itemsList }) {
+function CategorySection({ title, subtitle, itemsList }) {
+  const { url } = useRouteMatch();
+
   // Build the list element
   const items = itemsList.map((item, index) => (
     <li key={index} className="category-item">
-      <Link to={`/${item.url}`}>
+      <Link
+        to={item.url === "thinkful" ? `/${item.url}` : `${url}/${item.url}`}
+      >
         <img
           className="darkened circle-img md-img"
           alt={item.name}
@@ -27,7 +30,7 @@ function CategorySection({ title, url, subtitle, itemsList }) {
       id="{title.toLowerCase}"
       data-nav="{title.toLowerCase}"
     >
-      <CategoryHeader title={title} url={url} subtitle={subtitle} />
+      <CategoryHeader title={title} subtitle={subtitle} />
       <Switch>
         <Route exact path="/:title">
           <ul className="category-thumbnails flex-container" data-aos="fade-up">

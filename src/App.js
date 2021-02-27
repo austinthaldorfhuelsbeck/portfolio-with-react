@@ -40,13 +40,11 @@ export default function App() {
   //// PROPS ////
   const appsProps = {
     title: "apps",
-    url: "apps",
     subtitle: appsSubtitle,
     itemsList: appsItems,
   };
   const sitesProps = {
     title: "sites",
-    url: "sites",
     subtitle: sitesSubtitle,
     itemsList: sitesItems,
   };
