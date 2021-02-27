@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function BlackStaticVisuals({ item }) {
-  console.log(item.photoUrl);
   return (
     <main>
       <a
@@ -38,10 +37,12 @@ export default function BlackStaticVisuals({ item }) {
             lead from samples to contact without much in the way.
           </p>
           <br />
-          <hr />
-          <p className="warning" data-aos="fade-up">
-            <strong>*WARNING: Flashing lights*</strong>
-          </p>
+          <div className="warning" data-aos="fade-up">
+            <hr />
+            <p>
+              <strong>*WARNING: Flashing lights*</strong>
+            </p>
+          </div>
           <p data-aos="fade-up">
             <a
               href="https://blackstaticvisuals.austinhuelsbeck.repl.co/"

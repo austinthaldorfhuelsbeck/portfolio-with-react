@@ -3,12 +3,12 @@
     "subtitle": "Apps that I've designed, on the Internet or otherwise.",
     "appsItems": [
       {
-        "title": "Thinkful Projects",
+        "title": "thinkful",
         "subtitle": "Apps that I designed as a part of my coding bootcamp experience.",
         "url": "thinkful",
         "photoUrl":
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQ5dwSyrkBbVBSvGSay2zYubwQjv81KB9hw&usqp=CAU",
-        "thinkfulItems": [
+        "itemsList": [
           {
             "title": "WeLoveMovies",
             "url": "welovemovies",

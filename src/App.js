@@ -9,6 +9,8 @@ import Resume from "./Resume/Resume";
 import Blog from "./Blog/Blog";
 import Footer from "./Footer/Footer";
 
+import Thinkful from "./CategorySection/Apps/Thinkful";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -25,6 +27,7 @@ export default function App() {
   const sitesSubtitle = data.apps.subtitle;
   const sitesItems = data.sites.sitesItems;
   const aboutImgData = data.about;
+  const thinkfulItems = data.apps.appsItems[0];
 
   const pages = Object.keys(data);
   const socials = {
@@ -37,11 +40,13 @@ export default function App() {
   //// PROPS ////
   const appsProps = {
     title: "apps",
+    url: "apps",
     subtitle: appsSubtitle,
     itemsList: appsItems,
   };
   const sitesProps = {
     title: "sites",
+    url: "sites",
     subtitle: sitesSubtitle,
     itemsList: sitesItems,
   };
@@ -74,6 +79,9 @@ export default function App() {
           </Route>
           <Route path="/blog">
             <Blog />
+          </Route>
+          <Route path="/thinkful">
+            <Thinkful item={thinkfulItems} />
           </Route>
         </Switch>
       </Router>
