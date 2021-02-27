@@ -1,7 +1,14 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Header from "./header/Header";
+import Header from "./Header/Header";
+import Home from "./Home/Home";
+import CategorySection from "./CategorySection/CategorySection";
+import About from "./About/About";
+import Contact from "./Contact/Contact";
+import Resume from "./Resume/Resume";
+import Blog from "./Blog/Blog";
+import Footer from "./Footer/Footer";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -110,6 +117,18 @@ export default function App() {
       "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/Emily-Austin-Elopement-94.jpg",
     imageTitle: "Photo by: Henry Tieu Photography",
   };
+
+  //// PROPS ////
+  const sitesProps = {
+    title: "Sites",
+    subtitle: "Sites that I've designed that now reside on the Internet.",
+    itemsList: sitesItems,
+  };
+  const appsProps = {
+    title: "Apps",
+    subtitle: "Apps that I've designed, on the Internet or otherwise.",
+    itemsList: appsItems,
+  };
   const aboutProps = {
     title: "About",
     caption: aboutImgCaption,
@@ -124,9 +143,8 @@ export default function App() {
 
   return (
     <div className="container">
-      <Header />
       <Router>
-        <SiteNav pages={pages} />
+        <Header pages={pages} />
         <Switch>
           <Route exact path="/">
             <div className="home">
@@ -134,42 +152,26 @@ export default function App() {
             </div>
           </Route>
           <Route path="/sites">
-            <div className="sites">
-              <CategorySection
-                title={`Sites`}
-                subtitle={`Sites that I've designed that now reside on the Internet.`}
-                itemsList={sitesItems}
-              />
-            </div>
+            <CategorySection {...sitesProps} />
           </Route>
           <Route path="/apps">
-            <div className="apps">
-              <CategorySection
-                title="Apps"
-                subtitle="Apps that I've designed, on the Internet or otherwise."
-                itemsList={appsItems}
-              />
-            </div>
+            <CategorySection {...appsProps} />
           </Route>
           <Route path="/about">
-            <div className="about">
-              <ImageAndCaption
-                title="About"
-                caption={aboutImgCaption}
-                data={aboutImgData}
-              />
-            </div>
+            <About {...aboutProps} />
           </Route>
           <Route path="/contact">
-            <div className="contact">
-              <ContactForm title="Contact" />
-            </div>
+            <Contact title="Contact" />
           </Route>
-          <Route path="/resume" render={Resume} />
-          <Route path="/blog" render={Blog} />
+          <Route path="/resume">
+            <Resume />
+          </Route>
+          <Route path="/blog">
+            <Blog />
+          </Route>
         </Switch>
       </Router>
-      <SiteFooter socials={socials} />
+      <Footer socials={socials} />
     </div>
   );
 }

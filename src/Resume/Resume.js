@@ -1,5 +1,5 @@
 import React from "react";
-import CategoryHeader from "../Components/CategorySection/CategoryHeader/CategoryHeader";
+import CategoryHeader from "../CategorySection/CategoryHeader";
 
 export default function Resume() {
   return (

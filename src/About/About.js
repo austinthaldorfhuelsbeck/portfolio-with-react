@@ -1,7 +1,7 @@
 import React from "react";
-import CategoryHeader from "./CategorySection/CategoryHeader/CategoryHeader";
+import CategoryHeader from "../CategorySection/CategoryHeader";
 
-function ImageAndCaption({ title, caption, data }) {
+export default function About({ title, caption, data }) {
   // Find the page data
   const imgSrc = data.imageUrl;
   const imgTitle = data.imageTitle;
@@ -24,5 +24,3 @@ function ImageAndCaption({ title, caption, data }) {
     </section>
   );
 }
-
-export default ImageAndCaption;

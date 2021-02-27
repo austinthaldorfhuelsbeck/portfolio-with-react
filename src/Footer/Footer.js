@@ -1,6 +1,6 @@
 import React from "react";
 
-function SiteFooter({ socials }) {
+export default function Footer({ socials }) {
   // Get socials
   const socialList = Object.keys(socials);
   const socialUrls = Object.values(socials);
@@ -38,5 +38,3 @@ function SiteFooter({ socials }) {
     </footer>
   );
 }
-
-export default SiteFooter;

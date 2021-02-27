@@ -1,7 +1,7 @@
 import React from "react";
-import CategoryHeader from "./CategorySection/CategoryHeader/CategoryHeader";
+import CategoryHeader from "../CategorySection/CategoryHeader";
 
-function ContactForm({ title }) {
+export default function Contact({ title }) {
   return (
     <article id="contact" data-nav="contact">
       <CategoryHeader title={title} />
@@ -33,5 +33,3 @@ function ContactForm({ title }) {
     </article>
   );
 }
-
-export default ContactForm;

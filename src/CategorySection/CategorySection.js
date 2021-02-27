@@ -1,5 +1,5 @@
 import React from "react";
-import CategoryHeader from "./CategoryHeader/CategoryHeader";
+import CategoryHeader from "./CategoryHeader";
 
 function CategorySection({ title, subtitle, itemsList }) {
   // Build the list element

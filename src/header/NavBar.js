@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export default function SiteNav(props) {
-  const pagesList = props.pages.map((page, index) => {
+export default function SiteNav({ pages }) {
+  const pagesList = pages.map((page, index) => {
     const link = `/${page}`;
     return (
       <li key={index}>
