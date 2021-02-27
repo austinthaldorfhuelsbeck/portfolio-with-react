@@ -16,7 +16,19 @@
         "photoUrl":
           "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg",
         "technologies": ["React", "Node", "Express", "PostgreSQL"]
-      },
+      }
     ]
+  },
+  {
+    "title": "sites"
+  },
+  {
+    "title": "about"
+  },
+  {
+    "title": "resume"
+  },
+  {
+    "title": "blog"
   }
 ]
