@@ -1,14 +1,8 @@
 import React, { useEffect } from "react";
-import { Route, HashRouter } from "react-router-dom";
-import SiteHeader from "./Components/SiteHeader";
-import SiteNav from "./Components/SiteNav";
-import SiteInit from "./Components/SiteInit";
-import CategorySection from "./Components/CategorySection/CategorySection";
-import ImageAndCaption from "./Components/ImageAndCaption";
-import ContactForm from "./Components/ContactForm";
-import SiteFooter from "./Components/SiteFooter";
-import Resume from "./JSX/Resume";
-import "./index.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Header from "./header/Header";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -23,8 +17,7 @@ export default function App() {
   const sitesItems = [
     {
       name: "Black Static Visuals",
-      url:
-        "https://austinthaldorfhuelsbeck.github.io/AustinThaldorfHuelsbeck-projects/blackstaticvisuals.html",
+      url: "../blackstaticvisuals",
       photoUrl:
         "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/black-static.jpg",
       technologies: ["HTML", "CSS"],
@@ -131,51 +124,51 @@ export default function App() {
 
   return (
     <div className="container">
-      <HashRouter>
-        <SiteHeader />
+      <Header />
+      <Router>
         <SiteNav pages={pages} />
-        <div className="content">
-          <Route exact path="/" render={SiteInit} />
-          <Route
-            path="/sites"
-            render={(props) => (
+        <Switch>
+          <Route exact path="/">
+            <div className="home">
+              <Home />
+            </div>
+          </Route>
+          <Route path="/sites">
+            <div className="sites">
               <CategorySection
-                {...props}
                 title={`Sites`}
                 subtitle={`Sites that I've designed that now reside on the Internet.`}
                 itemsList={sitesItems}
               />
-            )}
-          />
-          <Route
-            path="/apps"
-            render={(props) => (
+            </div>
+          </Route>
+          <Route path="/apps">
+            <div className="apps">
               <CategorySection
-                {...props}
                 title="Apps"
                 subtitle="Apps that I've designed, on the Internet or otherwise."
                 itemsList={appsItems}
               />
-            )}
-          />
-          <Route
-            path="/about"
-            render={(props) => (
+            </div>
+          </Route>
+          <Route path="/about">
+            <div className="about">
               <ImageAndCaption
-                {...props}
                 title="About"
                 caption={aboutImgCaption}
                 data={aboutImgData}
               />
-            )}
-          />
-          <Route
-            path="/contact"
-            render={(props) => <ContactForm title="Contact" />}
-          />
+            </div>
+          </Route>
+          <Route path="/contact">
+            <div className="contact">
+              <ContactForm title="Contact" />
+            </div>
+          </Route>
           <Route path="/resume" render={Resume} />
-        </div>
-      </HashRouter>
+          <Route path="/blog" render={Blog} />
+        </Switch>
+      </Router>
       <SiteFooter socials={socials} />
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SiteInit() {
+export default function Home() {
   const url =
     "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/huelsbeck-headshot.jpg";
   const title = "Photo by: Henry Tieu Photography";
