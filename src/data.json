@@ -1,0 +1,22 @@
+[
+  {
+    "title": "apps",
+    "subtitle": "Apps that I've designed, on the Internet or otherwise.",
+    "appsItems": [
+      {
+        "name": "Thinkful Projects",
+        "url": "thinkful",
+        "photoUrl":
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQ5dwSyrkBbVBSvGSay2zYubwQjv81KB9hw&usqp=CAU",
+        "technologies": ["React", "jQuery", "Node", "Express", "PostgreSQL"]
+      },
+      {
+        "name": "TSS Transcriber",
+        "url": "transcriber",
+        "photoUrl":
+          "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg",
+        "technologies": ["React", "Node", "Express", "PostgreSQL"]
+      },
+    ]
+  }
+]
