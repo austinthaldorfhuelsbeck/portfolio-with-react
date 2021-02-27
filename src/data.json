@@ -1,6 +1,5 @@
-[
-  {
-    "title": "apps",
+{
+  "apps": {
     "subtitle": "Apps that I've designed, on the Internet or otherwise.",
     "appsItems": [
       {
@@ -19,16 +18,41 @@
       }
     ]
   },
-  {
-    "title": "sites"
+  "sites": {
+    "subtitle": "Sites that I've designed that now reside on the Internet.",
+    "sitesItems": [
+      {
+        "name": "Black Static Visuals",
+        "url": "blackstaticvisuals",
+        "photoUrl":
+          "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/black-static.jpg",
+        "technologies": ["HTML", "CSS"],
+      },
+      {
+        "name": "Austin + Emily Creative",
+        "url": "austinandemilycreative",
+        "photoUrl":
+          "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/austin-emily.jpg",
+        "technologies": ["jQuery", "Flex", "SCSS"],
+      },
+      {
+        "name": "PawPaw Vintage",
+        "url": "pawpawvintage",
+        "photoUrl":
+          "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/denim.jpg",
+        "technologies": ["Shopify", "React"],
+      },
+    ]
   },
-  {
-    "title": "about"
+  "about": {
+    "imageUrl":
+      "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/Emily-Austin-Elopement-94.jpg",
+    "imageTitle": "Photo by: Henry Tieu Photography"
   },
-  {
-    "title": "resume"
+  "resume": {
+
   },
-  {
-    "title": "blog"
+  "blog": {
+
   }
-]
+}
