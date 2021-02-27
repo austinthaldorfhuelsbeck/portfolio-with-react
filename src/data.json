@@ -26,22 +26,22 @@
         "url": "blackstaticvisuals",
         "photoUrl":
           "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/black-static.jpg",
-        "technologies": ["HTML", "CSS"],
+        "technologies": ["HTML", "CSS"]
       },
       {
         "name": "Austin + Emily Creative",
         "url": "austinandemilycreative",
         "photoUrl":
           "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/austin-emily.jpg",
-        "technologies": ["jQuery", "Flex", "SCSS"],
+        "technologies": ["jQuery", "Flex", "SCSS"]
       },
       {
         "name": "PawPaw Vintage",
         "url": "pawpawvintage",
         "photoUrl":
           "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/denim.jpg",
-        "technologies": ["Shopify", "React"],
-      },
+        "technologies": ["Shopify", "React"]
+      }
     ]
   },
   "about": {

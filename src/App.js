@@ -13,7 +13,11 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 export default function App() {
-  const pages = ["apps", "sites", "about", "resume", "blog"];
+  const data = require("./data.json");
+  const pages = Object.keys(data);
+  console.log(pages);
+
+  // const pages = ["apps", "sites", "about", "resume", "blog"];
 
   useEffect(() => {
     Aos.init({ duration: 1500 });
