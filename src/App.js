@@ -15,60 +15,15 @@ import "aos/dist/aos.css";
 export default function App() {
   const data = require("./data.json");
   const pages = Object.keys(data);
-  console.log(pages);
-
-  // const pages = ["apps", "sites", "about", "resume", "blog"];
 
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
 
   //// DATA ////
-  const sitesItems = [
-    {
-      name: "Black Static Visuals",
-      url: "blackstaticvisuals",
-      photoUrl:
-        "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/black-static.jpg",
-      technologies: ["HTML", "CSS"],
-    },
-    {
-      name: "Austin + Emily Creative",
-      url: "austinandemilycreative",
-      photoUrl:
-        "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/austin-emily.jpg",
-      technologies: ["jQuery", "Flex", "SCSS"],
-    },
-    {
-      name: "PawPaw Vintage",
-      url: "pawpawvintage",
-      photoUrl:
-        "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/denim.jpg",
-      technologies: ["Shopify", "React"],
-    },
-  ];
-  const appsItems = [
-    {
-      name: "Thinkful",
-      url: "thinkful",
-      photoUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQ5dwSyrkBbVBSvGSay2zYubwQjv81KB9hw&usqp=CAU",
-      technologies: ["React", "jQuery", "Node", "Express", "PostgreSQL"],
-    },
-    {
-      name: "Transcriber",
-      url: "transcriber",
-      photoUrl:
-        "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg",
-      technologies: ["React", "Node", "Express", "PostgreSQL"],
-    },
-  ];
-  const aboutImgData = {
-    url: "./#about",
-    imageUrl:
-      "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/Emily-Austin-Elopement-94.jpg",
-    imageTitle: "Photo by: Henry Tieu Photography",
-  };
+  const appsItems = data.apps.appsItems;
+  const sitesItems = data.sites.sitesItems;
+  const aboutImgData = data.about;
 
   //// PROPS ////
   const sitesProps = {
