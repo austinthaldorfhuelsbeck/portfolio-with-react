@@ -17,29 +17,28 @@ export default function App() {
   const pages = ["apps", "sites", "about", "contact", "resume", "blog"];
 
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1500 });
   }, []);
 
   //// DATA ////
   const sitesItems = [
     {
       name: "Black Static Visuals",
-      url: "../blackstaticvisuals",
+      url: "blackstaticvisuals",
       photoUrl:
         "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/black-static.jpg",
       technologies: ["HTML", "CSS"],
     },
     {
       name: "Austin + Emily Creative",
-      url:
-        "https://austinthaldorfhuelsbeck.github.io/AustinThaldorfHuelsbeck-projects/austinandemily.html",
+      url: "austinandemilycreative",
       photoUrl:
         "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/austin-emily.jpg",
       technologies: ["jQuery", "Flex", "SCSS"],
     },
     {
       name: "PawPaw Vintage",
-      url: "",
+      url: "pawpawvintage",
       photoUrl:
         "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/denim.jpg",
       technologies: ["Shopify", "React"],
@@ -47,22 +46,15 @@ export default function App() {
   ];
   const appsItems = [
     {
-      name: "Thinkful Projects",
-      url: "",
+      name: "Thinkful",
+      url: "thinkful",
       photoUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQ5dwSyrkBbVBSvGSay2zYubwQjv81KB9hw&usqp=CAU",
       technologies: ["React", "jQuery", "Node", "Express", "PostgreSQL"],
     },
     {
-      name: "Arena Decklist Database",
-      url: "",
-      photoUrl:
-        "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg",
-      technologies: ["React", "Node", "Express"],
-    },
-    {
-      name: "Bug Tracker",
-      url: "",
+      name: "Transcriber",
+      url: "transcriber",
       photoUrl:
         "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg",
       technologies: ["React", "Node", "Express", "PostgreSQL"],
@@ -120,17 +112,17 @@ export default function App() {
 
   //// PROPS ////
   const sitesProps = {
-    title: "Sites",
+    title: "sites",
     subtitle: "Sites that I've designed that now reside on the Internet.",
     itemsList: sitesItems,
   };
   const appsProps = {
-    title: "Apps",
+    title: "apps",
     subtitle: "Apps that I've designed, on the Internet or otherwise.",
     itemsList: appsItems,
   };
   const aboutProps = {
-    title: "About",
+    title: "about",
     caption: aboutImgCaption,
     data: aboutImgData,
   };
