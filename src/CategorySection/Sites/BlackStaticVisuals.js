@@ -1,6 +1,7 @@
 import React from "react";
 
-export default function BlackStaticVisuals() {
+export default function BlackStaticVisuals({ item }) {
+  console.log(item.photoUrl);
   return (
     <main>
       <a
@@ -9,7 +10,7 @@ export default function BlackStaticVisuals() {
       >
         <div id="screenshot" class="flex-container" data-aos="fade-up">
           <img
-            src="/src/CategorySection/Sites/black-static.jpg"
+            src={item.photoUrl}
             alt="Black Static Visuals"
             title="Black Static Visuals"
             class="inset-image"

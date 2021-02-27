@@ -3,14 +3,40 @@
     "subtitle": "Apps that I've designed, on the Internet or otherwise.",
     "appsItems": [
       {
-        "name": "Thinkful Projects",
+        "title": "Thinkful Projects",
+        "subtitle": "Apps that I designed as a part of my coding bootcamp experience.",
         "url": "thinkful",
         "photoUrl":
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQ5dwSyrkBbVBSvGSay2zYubwQjv81KB9hw&usqp=CAU",
-        "technologies": ["React", "jQuery", "Node", "Express", "PostgreSQL"]
+        "thinkfulItems": [
+          {
+            "title": "WeLoveMovies",
+            "url": "welovemovies",
+            "photoUrl":
+              "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg"
+          },
+          {
+            "title": "GrubDash",
+            "url": "grubdash",
+            "photoUrl":
+              "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg"
+          },
+          {
+            "title": "Flashcards",
+            "url": "flashcards",
+            "photoUrl":
+              "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg"
+          },
+          {
+            "title": "Pomodoro Timer",
+            "url": "pomodoro",
+            "photoUrl":
+              "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg"
+          }
+        ]
       },
       {
-        "name": "TSS Transcriber",
+        "title": "TSS Transcriber",
         "url": "transcriber",
         "photoUrl":
           "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg",
@@ -22,21 +48,21 @@
     "subtitle": "Sites that I've designed that now reside on the Internet.",
     "sitesItems": [
       {
-        "name": "Black Static Visuals",
+        "title": "Black Static Visuals",
         "url": "blackstaticvisuals",
         "photoUrl":
           "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/black-static.jpg",
         "technologies": ["HTML", "CSS"]
       },
       {
-        "name": "Austin + Emily Creative",
+        "title": "Austin + Emily Creative",
         "url": "austinandemilycreative",
         "photoUrl":
           "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/austin-emily.jpg",
         "technologies": ["jQuery", "Flex", "SCSS"]
       },
       {
-        "name": "PawPaw Vintage",
+        "title": "PawPaw Vintage",
         "url": "pawpawvintage",
         "photoUrl":
           "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/denim.jpg",

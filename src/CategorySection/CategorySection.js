@@ -16,7 +16,7 @@ function CategorySection({ title, subtitle, itemsList }) {
           alt={item.name}
           src={item.photoUrl}
         />
-        <p className="over-img">{item.name}</p>
+        <p className="over-img">{item.title}</p>
       </Link>
     </li>
   ));
@@ -36,7 +36,7 @@ function CategorySection({ title, subtitle, itemsList }) {
           </ul>
         </Route>
         <Route path="/:title/blackstaticvisuals">
-          <BlackStaticVisuals />
+          <BlackStaticVisuals item={itemsList[0]} />
         </Route>
       </Switch>
     </section>
