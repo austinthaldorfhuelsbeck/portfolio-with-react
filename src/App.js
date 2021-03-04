@@ -57,33 +57,35 @@ export default function App() {
     <div className="container">
       <Router>
         <Header pages={pages} />
-        <Switch>
-          <Route exact path="/">
-            <div className="home">
-              <Home />
-            </div>
-          </Route>
-          <Route path="/sites">
-            <CategorySection {...sitesProps} />
-          </Route>
-          <Route path="/apps">
-            <CategorySection {...appsProps} />
-          </Route>
-          <Route path="/about">
-            <About {...aboutProps} />
-          </Route>
-          <Route path="/resume">
-            <Resume />
-          </Route>
-          <Route path="/blog">
-            <Blog />
-          </Route>
-          <Route path="/thinkful">
-            <Thinkful item={thinkfulItems} />
-          </Route>
-        </Switch>
+        <div className="content">
+          <Switch>
+            <Route exact path="/">
+              <div className="home">
+                <Home />
+              </div>
+            </Route>
+            <Route path="/sites">
+              <CategorySection {...sitesProps} />
+            </Route>
+            <Route path="/apps">
+              <CategorySection {...appsProps} />
+            </Route>
+            <Route path="/about">
+              <About {...aboutProps} />
+            </Route>
+            <Route path="/resume">
+              <Resume />
+            </Route>
+            <Route path="/blog">
+              <Blog />
+            </Route>
+            <Route path="/thinkful">
+              <Thinkful item={thinkfulItems} />
+            </Route>
+          </Switch>
+          <Footer socials={socials} />
+        </div>
       </Router>
-      <Footer socials={socials} />
     </div>
   );
 }
