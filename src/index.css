@@ -25,8 +25,6 @@ body, button {
   border: none;
 }
 
-.header { background: #3c4457; }
-
 body { 
   padding: 1rem;
 }
@@ -114,14 +112,23 @@ nav li {
 
 .active { font-weight: 900; }
 
-.header {
+.header, .footer {
   position: fixed;
-  top: 0;
   z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #3c4457;
+  width: 100%;
+}
+.header {
+  top: 0;
+}
+.footer {
+  bottom: 0;
 }
 
 .content {
-  padding-top: 60vw;
+  padding-top: 70vw;
   z-index: -100;
 }
 
@@ -236,13 +243,11 @@ form button {
 
 /* --- Footer --- */
 
-footer { padding-top: 3rem; }
-
 footer ul { padding: 0; }
 
 .email-info a:link,
 .copyright-info {
-  padding-top: 2rem;
+  padding-top: 1rem;
   color: #525e65;
 }
 
@@ -301,9 +306,9 @@ footer ul { padding: 0; }
 
 @media all and (min-width: 800px) {
   .header-intro,
-  .project-content,
   .form-container,
   #about { width: 32rem; }
+  .project-content { width: 58rem; }
 
   #site-nav,
   #menu {
@@ -320,5 +325,9 @@ footer ul { padding: 0; }
   .header-title h1 { font-size: 5vw; }
   .project-intro h1 { font-size: 7vw; }
 
-  .content { padding-top: 20vw; }
+  .content { padding-top: 250px; }
+}
+
+@media all and (min-width: 1800px) {
+  .content { padding-top: 14vw; }
 }

@@ -83,9 +83,9 @@ export default function App() {
               <Thinkful item={thinkfulItems} />
             </Route>
           </Switch>
-          <Footer socials={socials} />
         </div>
       </Router>
+      <Footer socials={socials} />
     </div>
   );
 }

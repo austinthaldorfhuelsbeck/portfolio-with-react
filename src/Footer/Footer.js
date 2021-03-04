@@ -21,19 +21,17 @@ export default function Footer({ socials }) {
 
   // Build component and return
   return (
-    <footer id="site-footer">
-      <div className="container">
-        <ul className="links flex-icons">{socialLinks}</ul>
+    <footer className="footer">
+      <ul className="links flex-icons">{socialLinks}</ul>
 
-        <div className="email-info flex-container">
-          <a href="mailto:austinthaldorfhuelsbeck@gmail.com">
-            <u>austinthaldorfhuelsbeck@gmail.com</u>
-          </a>
-        </div>
+      <div className="email-info flex-container">
+        <a href="mailto:austinthaldorfhuelsbeck@gmail.com">
+          <u>austinthaldorfhuelsbeck@gmail.com</u>
+        </a>
+      </div>
 
-        <div className="copyright-info flex-container">
-          <p>&copy; 2021 Austin Thaldorf-Huelsbeck</p>
-        </div>
+      <div className="copyright-info flex-container">
+        <p>&copy; 2021 Austin Thaldorf-Huelsbeck</p>
       </div>
     </footer>
   );
