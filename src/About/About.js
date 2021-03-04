@@ -55,7 +55,7 @@ export default function About({ title, data }) {
     <section id={title.toLowerCase()} data-nav={title.toLowerCase()}>
       <CategoryHeader title={title} />
       <div>
-        <div className="flex-container" data-aos="fade-up">
+        <div className="flex-container" data-aos="fade-in">
           <img
             src={imgSrc}
             alt={title}
