@@ -115,7 +115,7 @@ nav li {
 .header, .footer {
   position: fixed;
   z-index: 100;
-  left: 50%;
+  left: 53%;
   transform: translateX(-50%);
   background: #3c4457;
   width: 100%;
@@ -128,7 +128,7 @@ nav li {
 }
 
 .content {
-  padding-top: 70vw;
+  padding-top: 27rem;
   z-index: -100;
 }
 
@@ -183,8 +183,7 @@ nav li {
 .category-title,
 .form-container {
   position: relative;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
+  padding: 4rem 0 2rem;
 }
 
 .category-header { text-align: center; }
@@ -198,12 +197,14 @@ nav li {
 .form-container {
   font-size: 1.2rem;
   width: 100%;
-  margin: 3rem auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 
 #about { margin: 0 auto 0 auto; }
 
 #about p { font-size: 1.2rem; }
+
+.about-caption, .project-content { padding-bottom: 13rem; }
 
 .header-intro,
 .project-content { text-align: center; }
@@ -307,7 +308,7 @@ footer ul { padding: 0; }
 @media all and (min-width: 800px) {
   .header-intro,
   .form-container,
-  #about { width: 32rem; }
+  #about { width: 48rem; }
   .project-content { width: 58rem; }
 
   #site-nav,
@@ -325,9 +326,7 @@ footer ul { padding: 0; }
   .header-title h1 { font-size: 5vw; }
   .project-intro h1 { font-size: 7vw; }
 
-  .content { padding-top: 250px; }
-}
+  .header, .footer { left: 50%; }
 
-@media all and (min-width: 1800px) {
-  .content { padding-top: 14vw; }
+  .content { padding-top: 20rem; }
 }

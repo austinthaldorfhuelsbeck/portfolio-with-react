@@ -1,0 +1,36 @@
+.resume-title { padding: 1rem 0 2rem; }
+
+.resume-section { padding: 1rem 0; }
+
+.resume-section h1,
+.resume-section h2,
+.resume-section h3,
+.resume-section p {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: none;
+  letter-spacing: normal;
+  text-align: left;
+  margin: 0.5rem 0;
+}
+.resume-section h1 { font-weight: 500; }
+.resume-section h2 { font-size: 1.2em; }
+.resume-section p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+}
+
+.row { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 1 rem;
+ }
+ .col {
+   display: flex;
+   flex-direction: column;
+   flex-basis: 100%;
+   flex: 1;
+   padding: 0 1rem;
+ }
+ .row-pad { padding-bottom: 3rem; }
