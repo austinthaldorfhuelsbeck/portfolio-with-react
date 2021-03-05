@@ -13,25 +13,25 @@
             "title": "WeLoveMovies",
             "url": "welovemovies",
             "photoUrl":
-              "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg"
+              "https://storage.googleapis.com/thaldorf-huelsbeck-portfolio/placeholder.jpg"
           },
           {
             "title": "GrubDash",
             "url": "grubdash",
             "photoUrl":
-              "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg"
+              "https://storage.googleapis.com/thaldorf-huelsbeck-portfolio/placeholder.jpg"
           },
           {
             "title": "Flashcards",
             "url": "flashcards",
             "photoUrl":
-              "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg"
+              "https://storage.googleapis.com/thaldorf-huelsbeck-portfolio/placeholder.jpg"
           },
           {
             "title": "Pomodoro Timer",
             "url": "pomodoro",
             "photoUrl":
-              "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg"
+              "https://storage.googleapis.com/thaldorf-huelsbeck-portfolio/placeholder.jpg"
           }
         ]
       },
@@ -39,7 +39,7 @@
         "title": "TSS Transcriber",
         "url": "transcriber",
         "photoUrl":
-          "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/placeholder.jpg",
+          "https://storage.googleapis.com/thaldorf-huelsbeck-portfolio/placeholder.jpg",
         "technologies": ["React", "Node", "Express", "PostgreSQL"]
       }
     ]
@@ -58,21 +58,21 @@
         "title": "Austin + Emily Creative",
         "url": "austinandemilycreative",
         "photoUrl":
-          "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/austin-emily.jpg",
+          "https://storage.googleapis.com/thaldorf-huelsbeck-portfolio/austin-emily.jpg",
         "technologies": ["jQuery", "Flex", "SCSS"]
       },
       {
         "title": "PawPaw Vintage",
         "url": "pawpawvintage",
         "photoUrl":
-          "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/denim.jpg",
+          "https://storage.googleapis.com/thaldorf-huelsbeck-portfolio/denim.jpg",
         "technologies": ["Shopify", "React"]
       }
     ]
   },
   "about": {
     "imageUrl":
-      "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/Emily-Austin-Elopement-94.jpg",
+      "https://storage.googleapis.com/thaldorf-huelsbeck-portfolio/Emily-Austin-Elopement-94.jpg",
     "imageTitle": "Photo by: Henry Tieu Photography"
   },
   "resume": {

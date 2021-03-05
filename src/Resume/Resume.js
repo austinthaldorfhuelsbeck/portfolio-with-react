@@ -2,10 +2,17 @@ import React from "react";
 import CategoryHeader from "../CategorySection/CategoryHeader";
 import "./resume.css";
 
-export default function Resume() {
+export default function Resume({ scrollToTop }) {
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
   return (
     <div className="project-content">
-      <CategoryHeader title="Resume" />
+      <CategoryHeader title="Resume" id="header" />
 
       <section className="resume-section">
         <div className="row row-pad">
@@ -221,7 +228,7 @@ export default function Resume() {
         <p>
           <a
             href="https://www.linkedin.com/in/austinhuelsbeck"
-            title="LinkedIn Profile & Resume"
+            title="LinkedIn Profile &amp; Resume"
             target="_blank"
           >
             <strong>Connect &amp; view more details on LinkedIn &rarr;</strong>
@@ -229,6 +236,10 @@ export default function Resume() {
         </p>
         <br />
         <p className="tiny-text">Updated Mar 4, 2021</p>
+        <br />
+        <div className="container">
+          <i className="fas fa-arrow-circle-up fa-4x" onClick={scrollToTop}></i>
+        </div>
       </section>
     </div>
   );

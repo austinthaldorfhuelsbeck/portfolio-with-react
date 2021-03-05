@@ -2,6 +2,13 @@ import React from "react";
 import CategoryHeader from "../CategorySection/CategoryHeader";
 
 export default function About({ title, data }) {
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
   // Find the page data
   const imgSrc = data.imageUrl;
   const imgTitle = data.imageTitle;

@@ -1,7 +1,6 @@
 /* --- Defaults for page body content --- */
 
 html {
-  scroll-behavior: smooth;
   height: 100%;
   background: #3c4457;
 }
@@ -49,8 +48,7 @@ hr {
 /* --- Drop Shadow --- */
 #site-nav,
 img,
-.links a,
-.to-top {
+.links a {
   box-shadow: 0 2px 10px 0 rgba(0,0,0,.4);
 }
 
@@ -207,7 +205,8 @@ nav li {
 .about-caption, .project-content { padding-bottom: 13rem; }
 
 .header-intro,
-.project-content { text-align: center; }
+.project-content,
+.fa-arrow-circle-up { text-align: center; }
 
 .form-container,
 #about,
