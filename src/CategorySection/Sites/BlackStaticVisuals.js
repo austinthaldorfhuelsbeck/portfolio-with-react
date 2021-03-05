@@ -3,27 +3,37 @@ import React from "react";
 export default function BlackStaticVisuals({ item }) {
   return (
     <main>
-      <a
-        href="https://blackstaticvisuals.austinhuelsbeck.repl.co/"
-        target="_blank"
-      >
-        <div id="screenshot" class="flex-container" data-aos="fade-up">
-          <img
-            src={item.photoUrl}
-            alt="Black Static Visuals"
-            title="Black Static Visuals"
-            class="inset-image"
-          />
-        </div>
-      </a>
+      <div id="screenshot" class="flex-container" data-aos="fade-up">
+        <img
+          src="https://storage.googleapis.com/ath-portfolio-images/bsv-screenshot.jpg"
+          alt="Black Static Visuals"
+          title="Black Static Visuals"
+          class="inset-image"
+        />
+      </div>
       <div class="project-content">
         <section class="category-section" id="project-content">
+          <div className="warning" data-aos="fade-up">
+            <hr />
+            <p>
+              <strong>*WARNING: Flashing lights*</strong>
+            </p>
+          </div>
+
+          <h3 className="justify" data-aos="fade-up">
+            <a
+              href="https://blackstaticvisuals.austinhuelsbeck.repl.co/"
+              target="_blank"
+            >
+              Site &rarr;
+            </a>
+          </h3>
+
           <p data-aos="fade-up">
             This is the first full website I built using <strong>HTML</strong>{" "}
-            &amp;
-            <strong>CSS</strong>. When I shot freelance music videos, I created
-            a simple portfolio site to display my work. I wanted to challenge
-            myself to recreate it faithfully.
+            &amp; <strong>CSS</strong>. When I shot freelance music videos, I
+            created a simple portfolio site to display my work. I wanted to
+            challenge myself to recreate it faithfully.
           </p>
           <p data-aos="fade-up">
             This project uses <strong>Flexbox</strong>,{" "}
@@ -36,37 +46,15 @@ export default function BlackStaticVisuals({ item }) {
             there&ndash; I wanted the experience to very quickly and naturally
             lead from samples to contact without much in the way.
           </p>
-          <br />
-          <div className="warning" data-aos="fade-up">
-            <hr />
-            <p>
-              <strong>*WARNING: Flashing lights*</strong>
-            </p>
-          </div>
-          <p data-aos="fade-up">
-            <a
-              href="https://blackstaticvisuals.austinhuelsbeck.repl.co/"
-              target="_blank"
-            >
-              <u>
-                <strong>
-                  The finished site is hosted on <em>Repl.it</em>.
-                </strong>
-              </u>
-            </a>
-          </p>
-          <p data-aos="fade-up">
+
+          <h3 className="justify" data-aos="fade-up">
             <a
               href="https://github.com/austinthaldorfhuelsbeck/BlackStaticVisuals"
               target="_blank"
             >
-              <u>
-                <strong>
-                  The finished <em>GitHub</em> repository is here.
-                </strong>
-              </u>
+              Repo &rarr;
             </a>
-          </p>
+          </h3>
         </section>
       </div>
     </main>

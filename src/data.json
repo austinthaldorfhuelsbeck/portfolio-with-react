@@ -3,43 +3,43 @@
     "subtitle": "Apps that I've designed, on the Internet or otherwise.",
     "appsItems": [
       {
-        "title": "thinkful",
+        "title": "Thinkful",
         "subtitle": "Apps that I designed as a part of my coding bootcamp experience.",
         "url": "thinkful",
         "photoUrl":
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxQ5dwSyrkBbVBSvGSay2zYubwQjv81KB9hw&usqp=CAU",
+          "https://storage.googleapis.com/ath-portfolio-images/thinkful.jpg",
         "itemsList": [
           {
             "title": "WeLoveMovies",
             "url": "welovemovies",
             "photoUrl":
-              "https://storage.googleapis.com/thaldorf-huelsbeck-portfolio/placeholder.jpg"
+              "https://storage.googleapis.com/ath-portfolio-images/welovemovies.jpg"
           },
           {
             "title": "GrubDash",
             "url": "grubdash",
             "photoUrl":
-              "https://storage.googleapis.com/thaldorf-huelsbeck-portfolio/placeholder.jpg"
+              "https://storage.googleapis.com/ath-portfolio-images/grubdash.jpg"
           },
           {
             "title": "Flashcards",
             "url": "flashcards",
             "photoUrl":
-              "https://storage.googleapis.com/thaldorf-huelsbeck-portfolio/placeholder.jpg"
+              "https://storage.googleapis.com/ath-portfolio-images/flashcards.jpg"
           },
           {
             "title": "Pomodoro Timer",
             "url": "pomodoro",
             "photoUrl":
-              "https://storage.googleapis.com/thaldorf-huelsbeck-portfolio/placeholder.jpg"
+              "https://storage.googleapis.com/ath-portfolio-images/timer.jpg"
           }
         ]
       },
       {
-        "title": "TSS Transcriber",
+        "title": "Transcribe & Translate",
         "url": "transcriber",
         "photoUrl":
-          "https://storage.googleapis.com/thaldorf-huelsbeck-portfolio/placeholder.jpg",
+          "https://storage.googleapis.com/ath-portfolio-images/transcribe.jpg",
         "technologies": ["React", "Node", "Express", "PostgreSQL"]
       }
     ]
@@ -51,28 +51,28 @@
         "title": "Black Static Visuals",
         "url": "blackstaticvisuals",
         "photoUrl":
-          "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/black-static.jpg",
+          "https://storage.googleapis.com/ath-portfolio-images/blackstatic.jpg",
         "technologies": ["HTML", "CSS"]
       },
       {
         "title": "Austin + Emily Creative",
         "url": "austinandemilycreative",
         "photoUrl":
-          "https://storage.googleapis.com/thaldorf-huelsbeck-portfolio/austin-emily.jpg",
+          "https://storage.googleapis.com/ath-portfolio-images/austin-emily.jpg",
         "technologies": ["jQuery", "Flex", "SCSS"]
       },
       {
         "title": "PawPaw Vintage",
         "url": "pawpawvintage",
         "photoUrl":
-          "https://storage.googleapis.com/thaldorf-huelsbeck-portfolio/denim.jpg",
+          "https://storage.googleapis.com/ath-portfolio-images/denim.jpg",
         "technologies": ["Shopify", "React"]
       }
     ]
   },
   "about": {
     "imageUrl":
-      "https://storage.googleapis.com/thaldorf-huelsbeck-portfolio/Emily-Austin-Elopement-94.jpg",
+      "https://storage.googleapis.com/ath-portfolio-images/Emily-Austin-Elopement-94.jpg",
     "imageTitle": "Photo by: Henry Tieu Photography"
   },
   "resume": {

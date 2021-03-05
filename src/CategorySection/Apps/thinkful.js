@@ -19,7 +19,7 @@ export default function Thinkful({ item }) {
           alt={item.name}
           src={item.photoUrl}
         />
-        <p className="over-img">{item.title}</p>
+        <h2 className="over-img">{item.title}</h2>
       </Link>
     </li>
   ));

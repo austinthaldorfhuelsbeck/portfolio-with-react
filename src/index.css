@@ -170,7 +170,7 @@ nav li {
 /*--- Cool little trick to get text on top of the images! ---*/
 .over-img {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.3rem;
@@ -209,6 +209,7 @@ nav li {
 .fa-arrow-circle-up { text-align: center; }
 
 .form-container,
+.justify,
 #about,
 #skills,
 #project-content { text-align: justify; }
@@ -271,7 +272,7 @@ footer ul { padding: 0; }
 /* --- Custom Classes --- */
 
 .circle-img { border-radius: 50%; }
-.darkened { filter: brightness(70%); }
+.darkened { filter: brightness(50%); }
 .md-img { width: 12em; }
 .inline { display: inline; }
 
