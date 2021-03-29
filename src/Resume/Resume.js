@@ -14,6 +14,13 @@ export default function Resume() {
     <div className="project-content" id="resume">
       <CategoryHeader title="Resume" id="header" />
 
+      <a
+        href="https://docs.google.com/document/d/1zLqJy7qyC65LjqLkpDXMwgbzHBtSVkBTf5zUWdQEAko/edit?usp=sharing"
+        target="_blank"
+      >
+        View in Google Docs &rarr;
+      </a>
+
       <section className="resume-section">
         <div className="row row-pad">
           <p data-aos="fade-up">
