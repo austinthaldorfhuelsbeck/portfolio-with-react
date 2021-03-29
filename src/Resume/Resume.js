@@ -2,7 +2,7 @@ import React from "react";
 import CategoryHeader from "../CategorySection/CategoryHeader";
 import "./resume.css";
 
-export default function Resume({ scrollToTop }) {
+export default function Resume() {
   function scrollToTop() {
     window.scrollTo({
       top: 0,
@@ -48,7 +48,7 @@ export default function Resume({ scrollToTop }) {
         </div>
 
         <div className="row">
-          <h1>Experience</h1>
+          <h1 data-aos="fade-up">Experience</h1>
         </div>
         <div className="row">
           <div className="col" data-aos="fade-up">
@@ -68,7 +68,7 @@ export default function Resume({ scrollToTop }) {
               </p>
               <p>
                 Recorded, edited, and distributed 100+ episodes of a weekly
-                podcast; grew from 50,000 to > 3 million downloads
+                podcast; grew from 50,000 to &gt; 3 million downloads
               </p>
               <p>
                 Led a major social media initiative to get the company on
@@ -83,6 +83,7 @@ export default function Resume({ scrollToTop }) {
                 title="Zero To Sixty"
                 href="https://vimeo.com/294708444"
                 target="_blank"
+                rel="noreferrer"
               >
                 <h2>Zero To Sixty by AGD Entertainment</h2>
               </a>
@@ -117,6 +118,7 @@ export default function Resume({ scrollToTop }) {
                   title="Austin + Emily Creative"
                   href="https://austinandemilycreative.com/films"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <strong>View Samples &rarr;</strong>
                 </a>
@@ -130,6 +132,7 @@ export default function Resume({ scrollToTop }) {
                 title="Worship Online"
                 href="http://worshiponline.com"
                 target="_blank"
+                rel="noreferrer"
               >
                 <h2>Worship Online</h2>
               </a>
@@ -157,6 +160,7 @@ export default function Resume({ scrollToTop }) {
               <a
                 href="https://www.thinkful.com/bootcamp/web-development/flexible/"
                 target="_blank"
+                rel="noreferrer"
               >
                 Thinkful
               </a>
@@ -176,12 +180,17 @@ export default function Resume({ scrollToTop }) {
               <a
                 href="https://www.firstinspires.org/robotics/frc"
                 target="_blank"
+                rel="noreferrer"
               >
                 FIRST Robotics
               </a>
             </h2>
             <h3>
-              <a href="https://www.wilsonvillerobotics.com/" target="_blank">
+              <a
+                href="https://www.wilsonvillerobotics.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Team 1425
               </a>
             </h3>
@@ -194,7 +203,11 @@ export default function Resume({ scrollToTop }) {
           <div className="col" data-aos="fade-up">
             <p>2009&ndash;2013</p>
             <h2>
-              <a href="https://www.georgefox.edu/" target="_blank">
+              <a
+                href="https://www.georgefox.edu/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 George Fox University
               </a>
             </h2>
@@ -202,14 +215,22 @@ export default function Resume({ scrollToTop }) {
             <p>Audio Engineering concentration</p>
             <p>
               Excellence in Sound Design Award:{" "}
-              <a href="https://www.beaweb.org/conv/" target="_blank">
+              <a
+                href="https://www.beaweb.org/conv/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 BEA Las Vegas
               </a>{" "}
               '14
             </p>
             <p>
               Attended{" "}
-              <a href="https://www.cmcnashville.com/" target="_blank">
+              <a
+                href="https://www.cmcnashville.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Contemporary Music Center
               </a>
               , a semester-long intensive remote study
@@ -224,6 +245,7 @@ export default function Resume({ scrollToTop }) {
             href="https://www.linkedin.com/in/austinhuelsbeck"
             title="LinkedIn Profile &amp; Resume"
             target="_blank"
+            rel="noreferrer"
           >
             <strong>Connect &amp; view more details on LinkedIn &rarr;</strong>
           </a>
