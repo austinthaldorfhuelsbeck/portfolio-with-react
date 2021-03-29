@@ -246,9 +246,8 @@ form button {
 
 footer ul { padding: 0; }
 
-.email-info a:link,
-.copyright-info {
-  padding-top: 1rem;
+.email-info a:link {
+  padding: .5rem 0;
   color: #525e65;
 }
 
@@ -301,7 +300,11 @@ footer ul { padding: 0; }
 
 .tiny-text { font-size: 0.9rem; }
 
-.warning { font-size: 0.9rem; color: #bf4b52; }
+.warning {
+  font-size: 0.9rem;
+  color: #bf4b52;
+  padding-top: 1em;
+}
 
 /* --- Media Queries (Desktop) --- */
 

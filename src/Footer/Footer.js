@@ -29,10 +29,6 @@ export default function Footer({ socials }) {
           <u>austinthaldorfhuelsbeck@gmail.com</u>
         </a>
       </div>
-
-      <div className="copyright-info flex-container">
-        <p>&copy; 2021 Austin Thaldorf-Huelsbeck</p>
-      </div>
     </footer>
   );
 }

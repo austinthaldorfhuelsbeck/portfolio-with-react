@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
 
 import CategoryHeader from "../CategoryHeader";
+import Pomodoro from "./Pomodoro";
 
 export default function Thinkful({ item }) {
   const { url } = useRouteMatch();
@@ -32,6 +33,9 @@ export default function Thinkful({ item }) {
           <ul className="category-thumbnails flex-container" data-aos="fade-up">
             {items}
           </ul>
+        </Route>
+        <Route path="/Thinkful/pomodoro">
+          <Pomodoro />
         </Route>
       </Switch>
     </section>

@@ -48,11 +48,11 @@
     "subtitle": "Sites that I've designed that now reside on the Internet.",
     "sitesItems": [
       {
-        "title": "Black Static Visuals",
-        "url": "blackstaticvisuals",
+        "title": "PawPaw Vintage",
+        "url": "pawpawvintage",
         "photoUrl":
-          "https://storage.googleapis.com/ath-portfolio-images/blackstatic.jpg",
-        "technologies": ["HTML", "CSS"]
+          "https://storage.googleapis.com/ath-portfolio-images/denim.jpg",
+        "technologies": ["Shopify", "React"]
       },
       {
         "title": "Austin + Emily Creative",
@@ -62,11 +62,11 @@
         "technologies": ["jQuery", "Flex", "SCSS"]
       },
       {
-        "title": "PawPaw Vintage",
-        "url": "pawpawvintage",
+        "title": "Black Static Visuals",
+        "url": "blackstaticvisuals",
         "photoUrl":
-          "https://storage.googleapis.com/ath-portfolio-images/denim.jpg",
-        "technologies": ["Shopify", "React"]
+          "https://storage.googleapis.com/ath-portfolio-images/blackstatic.jpg",
+        "technologies": ["HTML", "CSS"]
       }
     ]
   },

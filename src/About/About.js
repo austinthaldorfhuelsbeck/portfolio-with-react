@@ -30,11 +30,14 @@ export default function About({ title, data }) {
         it's solving a design challenge, or editing a feature film, I've always
         gravitated towards the problem-solving side of creative fields. Learning
         to code has brought that problem-solving, engineering-mindedness into
-        full focus. My training in digital marketing &amp; filmmaking inform the
-        design side&mdash;Who is this for? How will they experience it? How will
-        they <em>find</em> it?&mdash;while my passion for math, logic &amp;
-        engineering informs the coding side. (Those Calculus credits{" "}
-        <strong>did</strong> come in handy after all!)
+        full focus.
+      </p>
+
+      <p data-aos="fade-up">
+        My training in digital marketing &amp; filmmaking inform the design
+        side&mdash;Who is this for? How will they experience it? How will they{" "}
+        <em>find</em> it?&mdash;while my passion for math, logic &amp;
+        engineering informs the coding side.
       </p>
 
       <p data-aos="fade-up">
@@ -42,17 +45,17 @@ export default function About({ title, data }) {
         my goal is to be able to create within a team development setting as
         soon as possible. My experience has taught me that collaboration is the
         key to creating amazing results and sharpening your own skills. I never
-        like to be the smartest person in the room&mdash;I am always looking for
-        the next opportunity to learn, and being around great programmers is the
+        like to be the smartest person in the room. I am always looking for the
+        next opportunity to learn, and being around great programmers is the
         best way to make that happen.
       </p>
 
       <p data-aos="fade-up">
         Learning HTML, CSS, and JavaScript has already allowed me to design a
         handful of basic websites. I aim to design more apps to live on the web
-        as I continue my education. With tools like React, Node &amp; Express, I
-        plan to design &amp; build fully-functional webapps from conception to
-        delivery.
+        as I continue my education. With tools like React, Node.js &amp;
+        Postgres, I plan to design &amp; build fully-functional webapps from
+        conception to delivery.
       </p>
     </div>
   );

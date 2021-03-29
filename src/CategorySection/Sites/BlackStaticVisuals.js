@@ -3,32 +3,30 @@ import React from "react";
 export default function BlackStaticVisuals({ item }) {
   return (
     <main>
-      <div id="screenshot" class="flex-container" data-aos="fade-up">
-        <img
-          src="https://storage.googleapis.com/ath-portfolio-images/bsv-screenshot.jpg"
-          alt="Black Static Visuals"
-          title="Black Static Visuals"
-          class="inset-image"
-        />
-      </div>
-      <div class="project-content">
-        <section class="category-section" id="project-content">
-          <div className="warning" data-aos="fade-up">
-            <hr />
-            <p>
-              <strong>*WARNING: Flashing lights*</strong>
-            </p>
+      <div className="project-content">
+        <h3 className="justify" data-aos="fade-up">
+          <div className="warning">
+            <strong>*WARNING: Flashing lights*</strong>
           </div>
+          <a
+            href="https://blackstaticvisuals.austinhuelsbeck.repl.co/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Visit Site &rarr;
+          </a>
+        </h3>
 
-          <h3 className="justify" data-aos="fade-up">
-            <a
-              href="https://blackstaticvisuals.austinhuelsbeck.repl.co/"
-              target="_blank"
-            >
-              Site &rarr;
-            </a>
-          </h3>
+        <div id="screenshot" class="flex-container" data-aos="fade-up">
+          <img
+            src="https://storage.googleapis.com/ath-portfolio-images/bsv-screenshot.jpg"
+            alt="Black Static Visuals"
+            title="Black Static Visuals"
+            class="inset-image"
+          />
+        </div>
 
+        <section className="category-section" id="project-content">
           <p data-aos="fade-up">
             This is the first full website I built using <strong>HTML</strong>{" "}
             &amp; <strong>CSS</strong>. When I shot freelance music videos, I
@@ -50,9 +48,10 @@ export default function BlackStaticVisuals({ item }) {
           <h3 className="justify" data-aos="fade-up">
             <a
               href="https://github.com/austinthaldorfhuelsbeck/BlackStaticVisuals"
+              rel="noreferrer"
               target="_blank"
             >
-              Repo &rarr;
+              Github Repo &rarr;
             </a>
           </h3>
         </section>

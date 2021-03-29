@@ -3,6 +3,7 @@ import { Link, Switch, Route, useRouteMatch } from "react-router-dom";
 import CategoryHeader from "./CategoryHeader";
 
 import BlackStaticVisuals from "./Sites/BlackStaticVisuals";
+import AustinAndEmilyCreative from "./Sites/AustinAndEmilyCreative";
 
 function CategorySection({ title, subtitle, itemsList }) {
   const { url } = useRouteMatch();
@@ -38,7 +39,10 @@ function CategorySection({ title, subtitle, itemsList }) {
           </ul>
         </Route>
         <Route path="/:title/blackstaticvisuals">
-          <BlackStaticVisuals item={itemsList[0]} />
+          <BlackStaticVisuals item={itemsList[2]} />
+        </Route>
+        <Route path="/:title/austinandemilycreative">
+          <AustinAndEmilyCreative item={itemsList[1]} />
         </Route>
       </Switch>
     </section>
