@@ -7,6 +7,7 @@ import About from "./About/About";
 import Resume from "./Resume/Resume";
 import Blog from "./Blog/Blog";
 import Footer from "./Footer/Footer";
+import NavBar from "./Header/NavBar";
 
 import Thinkful from "./CategorySection/Apps/Thinkful";
 
@@ -57,6 +58,7 @@ export default function App() {
       <Router>
         <Header pages={pages} />
         <div className="content">
+          <NavBar pages={pages} />
           <Switch>
             <Route exact path="/"></Route>
             <Route path="/sites">

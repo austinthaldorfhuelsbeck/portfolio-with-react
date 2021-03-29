@@ -126,7 +126,7 @@ nav li {
 }
 
 .content {
-  padding-top: 27rem;
+  padding-top: 20rem;
   z-index: -100;
 }
 
@@ -198,7 +198,7 @@ nav li {
   margin: 0 auto 0 auto;
 }
 
-#about { margin: 0 auto 0 auto; }
+#about, .category-section, #resume { margin: 1rem auto 0 auto; }
 
 #about p { font-size: 1.2rem; }
 
@@ -331,5 +331,5 @@ footer ul { padding: 0; }
 
   .header, .footer { left: 50%; }
 
-  .content { padding-top: 20rem; }
+  .content { padding-top: 10rem; }
 }

@@ -11,7 +11,7 @@ export default function Resume() {
   }
 
   return (
-    <div className="project-content">
+    <div className="project-content" id="resume">
       <CategoryHeader title="Resume" id="header" />
 
       <section className="resume-section">
