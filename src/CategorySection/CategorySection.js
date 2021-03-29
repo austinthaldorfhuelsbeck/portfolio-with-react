@@ -5,6 +5,7 @@ import CategoryHeader from "./CategoryHeader";
 import BlackStaticVisuals from "./Sites/BlackStaticVisuals";
 import AustinAndEmilyCreative from "./Sites/AustinAndEmilyCreative";
 import PawPawVintage from "./Sites/PawPawVintage";
+import Transcriber from "./Apps/Transcriber";
 
 function CategorySection({ title, subtitle, itemsList }) {
   const { url } = useRouteMatch();
@@ -46,7 +47,10 @@ function CategorySection({ title, subtitle, itemsList }) {
           <AustinAndEmilyCreative item={itemsList[1]} />
         </Route>
         <Route path="/:title/pawpawvintage">
-          <PawPawVintage item={itemsList[1]} />
+          <PawPawVintage />
+        </Route>
+        <Route path="/:title/transcriber">
+          <Transcriber />
         </Route>
       </Switch>
     </section>

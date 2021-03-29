@@ -9,6 +9,10 @@ export default function About({ title, data }) {
     });
   }
 
+  const url =
+    "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/huelsbeck-headshot.jpg";
+  const photoTitle = "Photo by: Henry Tieu Photography";
+
   // Find the page data
   const imgSrc = data.imageUrl;
   const imgTitle = data.imageTitle;
@@ -65,13 +69,18 @@ export default function About({ title, data }) {
     <section id={title.toLowerCase()} data-nav={title.toLowerCase()}>
       <CategoryHeader title={title} />
       <div>
-        <div className="flex-container" data-aos="fade-in">
-          <img
-            src={imgSrc}
-            alt={title}
-            title={imgTitle}
-            className="inset-image"
-          />
+        <div id="portfolio-intro" data-aos="flip-left">
+          <div id="header-photo">
+            <img src={url} title={photoTitle} className="circle-img" />
+          </div>
+
+          <div className="header-intro">
+            <p>Welcome to my portfolio!</p>
+            <p>
+              I'm Austin. I'm a web developer with a background in video and
+              design.
+            </p>
+          </div>
         </div>
         {caption()}
       </div>

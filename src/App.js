@@ -60,9 +60,7 @@ export default function App() {
         <div className="content">
           <Switch>
             <Route exact path="/">
-              <div className="home">
-                <Home />
-              </div>
+              <About {...aboutProps} />
             </Route>
             <Route path="/sites">
               <CategorySection {...sitesProps} />

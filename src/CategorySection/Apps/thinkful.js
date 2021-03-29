@@ -2,10 +2,10 @@ import React from "react";
 import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
 
 import CategoryHeader from "../CategoryHeader";
-import Pomodoro from "./Pomodoro";
-import Flashcards from "./Flashcards";
-import Grubdash from "./Grubdash";
-import WeLoveMovies from "./WeLoveMovies";
+import Pomodoro from "./Thinkful/Pomodoro";
+import Flashcards from "./Thinkful/Flashcards";
+import Grubdash from "./Thinkful/Grubdash";
+import WeLoveMovies from "./Thinkful/WeLoveMovies";
 
 export default function Thinkful({ item }) {
   const { url } = useRouteMatch();
