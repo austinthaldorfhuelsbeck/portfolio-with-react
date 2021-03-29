@@ -3,6 +3,8 @@ import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
 
 import CategoryHeader from "../CategoryHeader";
 import Pomodoro from "./Pomodoro";
+import Flashcards from "./Flashcards";
+import Grubdash from "./Grubdash";
 
 export default function Thinkful({ item }) {
   const { url } = useRouteMatch();
@@ -34,8 +36,14 @@ export default function Thinkful({ item }) {
             {items}
           </ul>
         </Route>
-        <Route path="/Thinkful/pomodoro">
+        <Route path="/thinkful/pomodoro">
           <Pomodoro />
+        </Route>
+        <Route path="/thinkful/flashcards">
+          <Flashcards />
+        </Route>
+        <Route path="/thinkful/grubdash">
+          <Grubdash />
         </Route>
       </Switch>
     </section>
