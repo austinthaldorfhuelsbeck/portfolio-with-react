@@ -16,7 +16,39 @@ export default function Resume({ scrollToTop }) {
 
       <section className="resume-section">
         <div className="row row-pad">
-          <h1 data-aos="fade-up">Employment</h1>
+          <p data-aos="fade-up">
+            Full-stack web developer who is proficient in HTML, CSS, SQL, and
+            JavaScript with React and Node.js. My approach to development is
+            informed by over ten years of experience in audio engineering and
+            cinematography. Digital marketing specialist with startup experience
+            and an interest in design.
+          </p>
+        </div>
+
+        <div className="row">
+          <h1 data-aos="fade-up">Skills</h1>
+        </div>
+        <div className="row row-pad">
+          <div className="col" data-aos="fade-up">
+            <ul>
+              <li>Digital Marketing</li>
+              <li>Adobe CC</li>
+              <li>Wordpress</li>
+              <li>AWS &amp; GCP</li>
+            </ul>
+          </div>
+          <div className="col" data-aos="fade-up">
+            <ul>
+              <li>Filmmaking</li>
+              <li>Podcasting</li>
+              <li>Sound Design</li>
+              <li>Music Production</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="row">
+          <h1>Experience</h1>
         </div>
         <div className="row">
           <div className="col" data-aos="fade-up">
@@ -26,14 +58,22 @@ export default function Resume({ scrollToTop }) {
               </p>
             </div>
             <div className="row row-pad" data-aos="fade-up">
-              <a
-                title="The Seattle School"
-                href="/AustinThaldorfHuelsbeck-projects/theseattleschool.html"
-              >
+              <a title="The Seattle School" href="http://theseattleschool.edu">
                 <h2>The Seattle School of Theology &amp; Psychology</h2>
               </a>
               <h3>Multimedia Specialist</h3>
-              <p>Digital Marketing | Video Editing | Podcast Editing</p>
+              <p>
+                Conceptualized, filmed, and edited dozens of original commercial
+                and donor-forward videos representing the institution’s brand
+              </p>
+              <p>
+                Recorded, edited, and distributed 100+ episodes of a weekly
+                podcast; grew from 50,000 to > 3 million downloads
+              </p>
+              <p>
+                Led a major social media initiative to get the company on
+                Instagram and YouTube
+              </p>
             </div>
             <div className="row" data-aos="fade-up">
               <p>2018&ndash;2019</p>
@@ -41,21 +81,19 @@ export default function Resume({ scrollToTop }) {
             <div className="row row-pad" data-aos="fade-up">
               <a
                 title="Zero To Sixty"
-                href="https://agdentertainment.com/about-zero-to-60"
+                href="https://vimeo.com/294708444"
                 target="_blank"
               >
                 <h2>Zero To Sixty by AGD Entertainment</h2>
               </a>
               <h3>Creative Director</h3>
-              <p>Videographer | Video Editing | Animation | Graphic Design</p>
               <p>
-                <a
-                  title="AGD Reel"
-                  href="https://vimeo.com/294708444"
-                  target="_blank"
-                >
-                  <strong>View Reel &rarr;</strong>
-                </a>
+                Launched over twenty new artists’ debut albums by creating
+                original album art, promo photos, music videos, and animations
+              </p>
+              <p>
+                Developed portfolio websites for artists using tools like
+                Squarespace and Wordpress
               </p>
             </div>
           </div>
@@ -67,8 +105,8 @@ export default function Resume({ scrollToTop }) {
             </div>
             <div className="row row-pad" data-aos="fade-up">
               <a
-                title="The Seattle School"
-                href="/AustinThaldorfHuelsbeck-projects/theseattleschool.html"
+                title="Austin + Emily"
+                href="https://austinandemilycreative.com"
               >
                 <h2>Austin + Emily Creative</h2>
               </a>
@@ -89,8 +127,9 @@ export default function Resume({ scrollToTop }) {
             </div>
             <div className="row" data-aos="fade-up">
               <a
-                title="The Seattle School"
-                href="/AustinThaldorfHuelsbeck-projects/theseattleschool.html"
+                title="Worship Online"
+                href="http://worshiponline.com"
+                target="_blank"
               >
                 <h2>Worship Online</h2>
               </a>
@@ -98,96 +137,12 @@ export default function Resume({ scrollToTop }) {
             <div className="row row-pad" data-aos="fade-up">
               <h3>Digital Marketing</h3>
               <p>
-                Videographer | Video Editing | Podcast Editing | Marketing
-                Campaigns &amp; Strategy
+                Developed core operations of a brand new startup to help grow it
+                from two employees to over forty
               </p>
-              <p>
-                <a
-                  title="Worship Online"
-                  href="http://worshiponline.com"
-                  target="_blank"
-                >
-                  <strong>View Website &rarr;</strong>
-                </a>
-              </p>
+              <p>Launched social media channels now with 50,000+ followers</p>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="resume-section" id="skills">
-        <div className="row row-pad">
-          <h1 data-aos="fade-up">Skills</h1>
-        </div>
-        <div className="row row-pad" data-aos="fade-up">
-          <h2>Development</h2>
-        </div>
-        <div className="col row-pad">
-          <p data-aos="fade-up">
-            I am currently enrolled in{" "}
-            <a
-              href="https://www.thinkful.com/bootcamp/web-development/flexible/"
-              target="_blank"
-            >
-              <strong>Thinkful</strong>
-            </a>
-            's Flex Engineering program, where I am learning to program websites
-            like the one you are reading with <strong>HTML</strong>,{" "}
-            <strong>CSS</strong>, and <strong>JavaScript</strong> with{" "}
-            <strong>React</strong>. These technologies form the base of my daily
-            approach to front-end development.
-          </p>
-          <br />
-          <p data-aos="fade-up">
-            For server-side development, I am learning the{" "}
-            <strong>Node.js</strong> framework with <strong>Express</strong>. I
-            am passionate about both client-side and server-side development,
-            and it is important to me to be well-versed in both.
-          </p>
-          <br />
-          <p data-aos="fade-up">
-            I use <strong>Git</strong> &amp; <strong>GitHub</strong> to manage
-            revisions for all of my projects. Check out my{" "}
-            <a
-              href="https://github.com/austinthaldorfhuelsbeck"
-              target="_blank"
-            >
-              <strong>GitHub page</strong>
-            </a>{" "}
-            to see my most recent projects and contributions.
-          </p>
-          <p data-aos="fade-up">
-            My preferred code editor is <strong>VSCode</strong>. I am quite
-            comfortable working in both <strong>Windows</strong> and{" "}
-            <strong>OS X</strong>, with basic knowledge of{" "}
-            <strong>Linux</strong>.
-          </p>
-        </div>
-        <div className="row row-pad">
-          <h1 data-aos="fade-up">Video &amp; Design</h1>
-        </div>
-        <div className="col row-pad">
-          <p data-aos="fade-up">
-            I have been shooting and editing video professionally for over six
-            years. From freelance, to startups, to an established institution, I
-            have been able to work with a wide variety of clients and deliver
-            results on-time.
-          </p>
-          <br />
-          <p data-aos="fade-up">
-            Beyond communication and professionalism, this experience has also
-            allowed me to develop strong skills with{" "}
-            <strong>Adobe Creative Cloud</strong>, including Photoshop, Premiere
-            Pro, Illustrator, Lightroom, and more.
-          </p>
-          <br />
-          <p data-aos="fade-up">
-            I have also gained real-world experience designing graphics and
-            video for the web, managing content using tools like{" "}
-            <strong>Libsyn</strong> &amp; <strong>Wordpress</strong>. I have
-            been able to lead and contribute to digital marketing campaigns,
-            drawing data-driven conclusions alongside a Marketing team.
-          </p>
         </div>
       </section>
 
@@ -197,9 +152,7 @@ export default function Resume({ scrollToTop }) {
         </div>
         <div className="row">
           <div className="col" data-aos="fade-up">
-            <p>
-              Nov 2019&ndash;<em>present</em>
-            </p>
+            <p>2020&ndash;2021</p>
             <h2>
               <a
                 href="https://www.thinkful.com/bootcamp/web-development/flexible/"
@@ -208,7 +161,35 @@ export default function Resume({ scrollToTop }) {
                 Thinkful
               </a>
             </h2>
-            <h3>Engineering Flex</h3>
+            <h3>Certificate, Software Engineering</h3>
+            <p>
+              Full-stack software engineering of real-world apps with
+              interactive front-ends and REST database structure
+            </p>
+            <p>
+              Practical mastery of HTML, CSS, JavaScript, React, Node.js with
+              Express, and PostgreSQL
+            </p>
+            <br />
+            <p>2006&ndash;2009</p>
+            <h2>
+              <a
+                href="https://www.firstinspires.org/robotics/frc"
+                target="_blank"
+              >
+                FIRST Robotics
+              </a>
+            </h2>
+            <h3>
+              <a href="https://www.wilsonvillerobotics.com/" target="_blank">
+                Team 1425
+              </a>
+            </h3>
+            <p>
+              Programmed robots and created animations with a team of fellow
+              high schoolers
+            </p>
+            <p>Invited to compete in worldwide events across the country</p>
           </div>
           <div className="col" data-aos="fade-up">
             <p>2009&ndash;2013</p>
@@ -217,9 +198,22 @@ export default function Resume({ scrollToTop }) {
                 George Fox University
               </a>
             </h2>
-            <h3>BA in Cinema Media Communications</h3>
+            <h3>BA in Cinema &amp; Media Communications</h3>
             <p>Audio Engineering concentration</p>
-            <p>Excellence in Sound Design Award: BEA Las Vegas '14</p>
+            <p>
+              Excellence in Sound Design Award:{" "}
+              <a href="https://www.beaweb.org/conv/" target="_blank">
+                BEA Las Vegas
+              </a>{" "}
+              '14
+            </p>
+            <p>
+              Attended{" "}
+              <a href="https://www.cmcnashville.com/" target="_blank">
+                Contemporary Music Center
+              </a>
+              , a semester-long intensive remote study
+            </p>
           </div>
         </div>
       </section>
@@ -235,7 +229,7 @@ export default function Resume({ scrollToTop }) {
           </a>
         </p>
         <br />
-        <p className="tiny-text">Updated Mar 4, 2021</p>
+        <p className="tiny-text">Updated Mar 28, 2021</p>
         <br />
         <div className="container">
           <i className="fas fa-arrow-circle-up fa-4x" onClick={scrollToTop}></i>
