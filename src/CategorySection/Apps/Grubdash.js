@@ -3,7 +3,7 @@ import React from "react";
 export default function Grubdash() {
   return (
     <main>
-      <div class="project-content">
+      <div className="project-content">
         <h3 className="justify" data-aos="fade-up">
           <a
             href="https://flashcard-o-matic-ath.vercel.app/"

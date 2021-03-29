@@ -5,6 +5,7 @@ import CategoryHeader from "../CategoryHeader";
 import Pomodoro from "./Pomodoro";
 import Flashcards from "./Flashcards";
 import Grubdash from "./Grubdash";
+import WeLoveMovies from "./WeLoveMovies";
 
 export default function Thinkful({ item }) {
   const { url } = useRouteMatch();
@@ -44,6 +45,9 @@ export default function Thinkful({ item }) {
         </Route>
         <Route path="/thinkful/grubdash">
           <Grubdash />
+        </Route>
+        <Route path="/thinkful/welovemovies">
+          <WeLoveMovies />
         </Route>
       </Switch>
     </section>
