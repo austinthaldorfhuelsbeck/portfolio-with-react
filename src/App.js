@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from "./Header/Header";
-import Home from "./Home/Home";
 import CategorySection from "./CategorySection/CategorySection";
 import About from "./About/About";
 import Resume from "./Resume/Resume";
@@ -59,9 +58,7 @@ export default function App() {
         <Header pages={pages} />
         <div className="content">
           <Switch>
-            <Route exact path="/">
-              <About {...aboutProps} />
-            </Route>
+            <Route exact path="/"></Route>
             <Route path="/sites">
               <CategorySection {...sitesProps} />
             </Route>
