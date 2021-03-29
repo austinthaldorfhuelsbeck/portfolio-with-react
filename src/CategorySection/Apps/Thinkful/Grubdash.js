@@ -6,7 +6,7 @@ export default function Grubdash() {
       <div className="project-content">
         <h3 className="justify" data-aos="fade-up">
           <a
-            href="https://flashcard-o-matic-ath.vercel.app/"
+            href="https://starter-grub-dash-front-end.vercel.app/"
             rel="noreferrer"
             target="_blank"
           >
