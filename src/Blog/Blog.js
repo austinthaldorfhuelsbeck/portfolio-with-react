@@ -1,25 +1,11 @@
 import React from "react";
 
-export default function Blog() {
+export default function WeLoveMovies() {
   return (
-    <div>
-      <div id="medium-widget"></div>
-      <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-      <script>
-        MediumWidget.Init(
-        {{
-          renderTo: "#medium-widget",
-          params: {
-            resource: "https://medium.com/@austinthaldorfhuelsbeck",
-            postsPerLine: 1,
-            limit: 4,
-            picture: "small",
-            fields: ["description", "author", "publishAt"],
-            ratio: "landscape",
-          },
-        }}
-        )
-      </script>
-    </div>
+    <main>
+      <div className="project-content">
+        <h3 data-aos="fade-up">Coming Soon!</h3>
+      </div>
+    </main>
   );
 }
