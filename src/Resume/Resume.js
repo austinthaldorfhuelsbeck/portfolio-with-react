@@ -1,13 +1,13 @@
-import React from "react";
-import CategoryHeader from "../CategorySection/CategoryHeader";
-import "./resume.css";
+import React from "react"
+import CategoryHeader from "../CategorySection/CategoryHeader"
+import "./resume.css"
 
 export default function Resume() {
   function scrollToTop() {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
-    });
+    })
   }
 
   return (
@@ -17,6 +17,7 @@ export default function Resume() {
       <a
         href="https://docs.google.com/document/d/1zLqJy7qyC65LjqLkpDXMwgbzHBtSVkBTf5zUWdQEAko/edit?usp=sharing"
         target="_blank"
+        rel="noreferrer"
       >
         View in Google Docs &rarr;
       </a>
@@ -265,5 +266,5 @@ export default function Resume() {
         </div>
       </section>
     </div>
-  );
+  )
 }

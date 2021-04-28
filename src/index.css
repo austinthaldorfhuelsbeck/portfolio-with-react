@@ -126,7 +126,7 @@ nav li {
 }
 
 .content {
-  padding-top: 20rem;
+  padding-top: 3rem;
   z-index: -100;
 }
 
@@ -312,7 +312,7 @@ footer ul { padding: 0; }
   .header-intro,
   .form-container,
   #about { width: 48rem; }
-  .project-content { width: 58rem; }
+  .project-content { width: 64rem; }
 
   #site-nav,
   #menu {
@@ -331,5 +331,5 @@ footer ul { padding: 0; }
 
   .header, .footer { left: 50%; }
 
-  .content { padding-top: 10rem; }
+  /* .content { padding-top: 10rem; } */
 }

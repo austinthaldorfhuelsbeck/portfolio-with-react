@@ -1,14 +1,14 @@
-import React from "react";
-import { Link, Switch, Route, useRouteMatch } from "react-router-dom";
-import CategoryHeader from "./CategoryHeader";
+import React from "react"
+import { Link, Switch, Route, useRouteMatch } from "react-router-dom"
+import CategoryHeader from "./CategoryHeader"
 
-import BlackStaticVisuals from "./Sites/BlackStaticVisuals";
-import AustinAndEmilyCreative from "./Sites/AustinAndEmilyCreative";
-import PawPawVintage from "./Sites/PawPawVintage";
-import Transcriber from "./Apps/Transcriber";
+import BlackStaticVisuals from "./Sites/BlackStaticVisuals"
+import AustinAndEmilyCreative from "./Sites/AustinAndEmilyCreative"
+import PawPawVintage from "./Sites/PawPawVintage"
+import Transcriber from "./Apps/Transcriber"
 
 function CategorySection({ title, subtitle, itemsList }) {
-  const { url } = useRouteMatch();
+  const { url } = useRouteMatch()
 
   // Build the list element
   const items = itemsList.map((item, index) => (
@@ -24,7 +24,7 @@ function CategorySection({ title, subtitle, itemsList }) {
         <h2 className="over-img">{item.title}</h2>
       </Link>
     </li>
-  ));
+  ))
 
   // Build the section and return
   return (
@@ -54,7 +54,7 @@ function CategorySection({ title, subtitle, itemsList }) {
         </Route>
       </Switch>
     </section>
-  );
+  )
 }
 
-export default CategorySection;
+export default CategorySection

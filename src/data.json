@@ -3,6 +3,13 @@
     "subtitle": "Apps that I've designed, on the Internet or otherwise.",
     "appsItems": [
       {
+        "title": "Austin + Emily Creative",
+        "url": "austinandemilycreative",
+        "photoUrl":
+          "https://storage.googleapis.com/ath-portfolio-images/austin-emily.jpg",
+        "technologies": ["jQuery", "Flex", "SCSS"]
+      },
+      {
         "title": "Thinkful",
         "subtitle": "Apps that I designed as a part of my coding bootcamp experience.",
         "url": "thinkful",
@@ -55,13 +62,6 @@
         "technologies": ["Shopify", "React"]
       },
       {
-        "title": "Austin + Emily Creative",
-        "url": "austinandemilycreative",
-        "photoUrl":
-          "https://storage.googleapis.com/ath-portfolio-images/austin-emily.jpg",
-        "technologies": ["jQuery", "Flex", "SCSS"]
-      },
-      {
         "title": "Black Static Visuals",
         "url": "blackstaticvisuals",
         "photoUrl":
@@ -76,9 +76,6 @@
     "imageTitle": "Photo by: Henry Tieu Photography"
   },
   "resume": {
-
-  },
-  "blog": {
 
   }
 }

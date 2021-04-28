@@ -4,11 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import CategorySection from "./CategorySection/CategorySection"
 import About from "./About/About"
 import Resume from "./Resume/Resume"
-import Blog from "./Blog/Blog"
 import Footer from "./Footer/Footer"
 import NavBar from "./NavBar/NavBar"
-
-import Thinkful from "./CategorySection/Apps/Thinkful"
 
 import Aos from "aos"
 import "aos/dist/aos.css"
@@ -71,12 +68,12 @@ export default function App() {
             <Route path="/resume">
               <Resume />
             </Route>
-            <Route path="/blog">
+            {/* <Route path="/blog">
               <Blog />
             </Route>
             <Route path="/thinkful">
               <Thinkful item={thinkfulItems} />
-            </Route>
+            </Route> */}
           </Switch>
         </div>
       </Router>
