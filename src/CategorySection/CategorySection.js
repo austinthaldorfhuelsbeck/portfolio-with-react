@@ -1,27 +1,33 @@
-import React from "react"
-import { Link, Switch, Route, useRouteMatch } from "react-router-dom"
+import { useState, useEffect } from "react"
+import { Link, useParams, useRouteMatch } from "react-router-dom"
 import CategoryHeader from "./CategoryHeader"
 
-import BlackStaticVisuals from "./Sites/BlackStaticVisuals"
-import AustinAndEmilyCreative from "./Sites/AustinAndEmilyCreative"
-import PawPawVintage from "./Sites/PawPawVintage"
-import Transcriber from "./Apps/Transcriber"
+export default function CategorySection() {
+  const url = useRouteMatch().url
+  const { category } = useParams()
+  const API_URL = "http://localhost:5000/projects/category"
 
-function CategorySection({ title, subtitle, itemsList }) {
-  const { url } = useRouteMatch()
+  const [projects, setProjects] = useState([])
 
-  // Build the list element
-  const items = itemsList.map((item, index) => (
+  useEffect(() => {
+    fetch(`${API_URL}/${category}`)
+      .then((response) => response.json())
+      .then((response) => response.data)
+      .then(setProjects)
+      .catch((err) => {
+        console.log(err)
+      })
+  }, [category])
+
+  const projectThumbnails = projects.map((project, index) => (
     <li key={index} className="category-item">
-      <Link
-        to={item.url === "thinkful" ? `/${item.url}` : `${url}/${item.url}`}
-      >
+      <Link to={`${url}/${project.project_id}`}>
         <img
           className="darkened circle-img md-img"
-          alt={item.name}
-          src={item.photoUrl}
+          alt={project.title}
+          src={project.thumbnail_url}
         />
-        <h2 className="over-img">{item.title}</h2>
+        <h2 className="over-img">{project.title}</h2>
       </Link>
     </li>
   ))
@@ -30,31 +36,13 @@ function CategorySection({ title, subtitle, itemsList }) {
   return (
     <section
       className="category-section"
-      id="{title.toLowerCase}"
-      data-nav="{title.toLowerCase}"
+      id="{category.toLowerCase}"
+      data-nav="{category.toLowerCase}"
     >
-      <CategoryHeader title={title} subtitle={subtitle} />
-      <Switch>
-        <Route exact path="/:title">
-          <ul className="category-thumbnails flex-container" data-aos="fade-up">
-            {items}
-          </ul>
-        </Route>
-        <Route path="/:title/blackstaticvisuals">
-          <BlackStaticVisuals item={itemsList[2]} />
-        </Route>
-        <Route path="/:title/austinandemilycreative">
-          <AustinAndEmilyCreative item={itemsList[1]} />
-        </Route>
-        <Route path="/:title/pawpawvintage">
-          <PawPawVintage />
-        </Route>
-        <Route path="/:title/transcriber">
-          <Transcriber />
-        </Route>
-      </Switch>
+      <CategoryHeader title={category} />
+      <ul className="category-thumbnails flex-container" data-aos="fade-up">
+        {projectThumbnails}
+      </ul>
     </section>
   )
 }
-
-export default CategorySection
