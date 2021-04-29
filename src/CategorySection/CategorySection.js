@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
-import { Link, useParams, useRouteMatch } from "react-router-dom"
+import { Switch, Route, Link, useParams, useRouteMatch } from "react-router-dom"
 import CategoryHeader from "./CategoryHeader"
+import ProjectPage from "../CategorySection/ProjectPage/ProjectPage"
 
 export default function CategorySection() {
   const url = useRouteMatch().url
@@ -40,9 +41,16 @@ export default function CategorySection() {
       data-nav="{category.toLowerCase}"
     >
       <CategoryHeader title={category} />
-      <ul className="category-thumbnails flex-container" data-aos="fade-up">
-        {projectThumbnails}
-      </ul>
+      <Switch>
+        <Route exact path="/:category">
+          <ul className="category-thumbnails flex-container" data-aos="fade-up">
+            {projectThumbnails}
+          </ul>
+        </Route>
+        <Route path="/:category/:projectId">
+          <ProjectPage />
+        </Route>
+      </Switch>
     </section>
   )
 }

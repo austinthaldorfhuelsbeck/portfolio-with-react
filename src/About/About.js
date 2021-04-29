@@ -1,21 +1,21 @@
-import React from "react";
-import CategoryHeader from "../CategorySection/CategoryHeader";
+import React from "react"
+import CategoryHeader from "../CategorySection/CategoryHeader"
 
-export default function About({ title, data }) {
+export default function About() {
   function scrollToTop() {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
-    });
+    })
   }
 
   const url =
-    "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/huelsbeck-headshot.jpg";
-  const photoTitle = "Photo by: Henry Tieu Photography";
+    "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/huelsbeck-headshot.jpg"
+  const photoTitle = "Photo by: Henry Tieu Photography"
 
   // Find the page data
-  const imgSrc = data.imageUrl;
-  const imgTitle = data.imageTitle;
+  // const imgSrc = data.imageUrl;
+  // const imgTitle = data.imageTitle;
 
   const caption = () => (
     <div className="about-caption">
@@ -62,16 +62,21 @@ export default function About({ title, data }) {
         conception to delivery.
       </p>
     </div>
-  );
+  )
 
   // Build the section and return
   return (
-    <section id={title.toLowerCase()} data-nav={title.toLowerCase()}>
-      <CategoryHeader title={title} />
+    <section id="about" data-nav="about">
+      <CategoryHeader title="about" />
       <div>
         <div id="portfolio-intro" data-aos="flip-left">
           <div id="header-photo">
-            <img src={url} title={photoTitle} className="circle-img" />
+            <img
+              src={url}
+              alt="Austin Thaldorf-Huelsbeck"
+              title={photoTitle}
+              className="circle-img"
+            />
           </div>
 
           <div className="header-intro">
@@ -85,5 +90,5 @@ export default function About({ title, data }) {
         {caption()}
       </div>
     </section>
-  );
+  )
 }
