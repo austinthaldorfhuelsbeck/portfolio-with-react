@@ -6,6 +6,7 @@ export default function ProjectPage() {
   const { projectId } = useParams()
   const API_URL = "http://localhost:5000/projects/"
   const [project, setProject] = useState({})
+  const [technologies, setTechnologies] = useState([])
 
   useEffect(() => {
     fetch(`${API_URL}/${projectId}`)
@@ -15,16 +16,29 @@ export default function ProjectPage() {
       .catch((err) => {
         console.log(err)
       })
+
+    fetch(`${API_URL}/${projectId}/technologies`)
+      .then((response) => response.json())
+      .then((response) => response.data)
+      .then(setTechnologies)
+      .catch((err) => {
+        console.log(err)
+      })
   }, [projectId])
+
+  const technologyList = technologies.map((technology) => (
+    <i className={`fab fa-${technology.name} fa-lg`}></i>
+  ))
 
   return (
     <main>
-      <div class="project-content">
+      <div class="project-content justify">
         <h3 className="justify" data-aos="fade-up">
           <a href={project.deployment_url} rel="noreferrer" target="_blank">
             Visit Site &rarr;
           </a>
         </h3>
+        <div data-aos="fade-up">Technologies Used: {technologyList}</div>
         <div id="screenshot" className="flex-container" data-aos="fade-up">
           <img
             src={project.screenshot_url}

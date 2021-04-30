@@ -45,11 +45,10 @@ export default function About() {
       </p>
 
       <p data-aos="fade-up">
-        Learning HTML, CSS, and JavaScript has already allowed me to design a
-        handful of basic websites. I aim to design more apps to live on the web
-        as I continue my education. With tools like React, Node.js &amp;
-        Postgres, I plan to design &amp; build fully-functional webapps from
-        conception to delivery.
+        Learning tools like React, Node.js, &amp; Postgres, I have been able to
+        design &amp; build fully-functional webapps from conception to delivery.
+        However, I am always striving to deepen my level of knowledge even with
+        technologies which I have already "learned".
       </p>
     </div>
   )

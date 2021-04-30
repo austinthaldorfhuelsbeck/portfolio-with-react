@@ -174,7 +174,7 @@ export default function Resume() {
             </p>
             <p>
               Practical mastery of HTML, CSS, JavaScript, React, Node.js with
-              Express, and PostgreSQL
+              Express and Knex, and PostgreSQL
             </p>
             <br />
             <p>2006&ndash;2009</p>

@@ -291,6 +291,8 @@ html {
   align-items: center;
 }
 
+.fab { margin: .5rem; }
+
 .inset-image {
   border-radius: .5em;
   width: 100%;
