@@ -4,7 +4,7 @@ import ScrollToTop from "../../Components/ScrollToTop"
 
 export default function ProjectPage() {
   const { projectId } = useParams()
-  const API_URL = "http://localhost:5000/projects/"
+  const API_URL = "https://portfolio-api-nine.vercel.app"
   const [project, setProject] = useState({})
   const [technologies, setTechnologies] = useState([])
 
@@ -26,7 +26,7 @@ export default function ProjectPage() {
       })
   }, [projectId])
 
-  const technologyList = technologies.map((technology) => (
+  const technologiesUsed = technologies.map((technology) => (
     <i className={`fab fa-${technology.name} fa-lg`}></i>
   ))
 
@@ -38,7 +38,7 @@ export default function ProjectPage() {
             Visit Site &rarr;
           </a>
         </h3>
-        <div data-aos="fade-up">Technologies Used: {technologyList}</div>
+        <div data-aos="fade-up">Technologies Used: {technologiesUsed}</div>
         <div id="screenshot" className="flex-container" data-aos="fade-up">
           <img
             src={project.screenshot_url}
