@@ -2,7 +2,7 @@
 
 html {
   height: 100%;
-  background: #3c4457;
+  background: #333a4b;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -22,10 +22,6 @@ body, button {
   color: #fff;
   background: none;
   border: none;
-}
-
-body { 
-  padding: 1rem;
 }
 
 img { width: 100%; }
@@ -115,7 +111,7 @@ nav li {
   z-index: 100;
   left: 53%;
   transform: translateX(-50%);
-  background: #3c4457;
+  background: #00000090;
   width: 100%;
 }
 .header {
@@ -275,7 +271,11 @@ footer ul { padding: 0; }
 .md-img { width: 12em; }
 .inline { display: inline; }
 
-.container { margin: 0 auto; }
+html {
+  margin: 0 auto;
+  background: radial-gradient(ellipse at center, #18212d 0%, #0d0e16 100%);
+  /* padding: 1rem; */
+}
 
 .flex-container {
   display: flex;

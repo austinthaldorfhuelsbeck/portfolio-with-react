@@ -1,23 +1,13 @@
 import React from "react"
 import CategoryHeader from "../CategorySection/CategoryHeader"
+import "../stars.css"
 
 export default function About() {
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    })
-  }
-
   const url =
     "https://raw.githubusercontent.com/austinthaldorfhuelsbeck/portfolio-with-react/develop/img/huelsbeck-headshot.jpg"
   const photoTitle = "Photo by: Henry Tieu Photography"
 
-  // Find the page data
-  // const imgSrc = data.imageUrl;
-  // const imgTitle = data.imageTitle;
-
-  const caption = () => (
+  const caption = (
     <div className="about-caption">
       <p data-aos="fade-up">
         I live up among the pines in beautiful Seattle, WA. During the day, I
@@ -66,29 +56,34 @@ export default function About() {
 
   // Build the section and return
   return (
-    <section id="about" data-nav="about">
-      <CategoryHeader title="about" />
-      <div>
-        <div id="portfolio-intro" data-aos="flip-left">
-          <div id="header-photo">
-            <img
-              src={url}
-              alt="Austin Thaldorf-Huelsbeck"
-              title={photoTitle}
-              className="circle-img"
-            />
-          </div>
+    <>
+      <section id="about" data-nav="about">
+        <CategoryHeader title="about" />
+        <div>
+          <div id="portfolio-intro" data-aos="flip-left">
+            <div id="header-photo">
+              <img
+                src={url}
+                alt={photoTitle}
+                title={photoTitle}
+                className="circle-img"
+              />
+            </div>
 
-          <div className="header-intro">
-            <p>Welcome to my portfolio!</p>
-            <p>
-              I'm Austin. I'm a web developer with a background in video and
-              design.
-            </p>
+            <div className="header-intro">
+              <p>Welcome to my portfolio!</p>
+              <p>
+                I'm Austin. I'm a web developer with a background in video and
+                design.
+              </p>
+            </div>
           </div>
+          {caption}
         </div>
-        {caption()}
-      </div>
-    </section>
+      </section>
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </>
   )
 }

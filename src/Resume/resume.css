@@ -1,3 +1,5 @@
+html { height: 200vw; }
+
 .resume-title { padding: 1rem 0 2rem; }
 
 .resume-section { padding: 1rem 0; }
@@ -25,12 +27,12 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 0 1 rem;
- }
- .col {
-   display: flex;
-   flex-direction: column;
-   flex-basis: 100%;
-   flex: 1;
-   padding: 0 1rem;
- }
- .row-pad { padding-bottom: 3rem; }
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 0 1rem;
+}
+.row-pad { padding-bottom: 3rem; }

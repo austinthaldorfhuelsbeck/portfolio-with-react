@@ -1,15 +1,9 @@
 import React from "react"
 import CategoryHeader from "../CategorySection/CategoryHeader"
+import ScrollToTop from "../Components/ScrollToTop.js"
 import "./resume.css"
 
 export default function Resume() {
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    })
-  }
-
   return (
     <div className="project-content" id="resume">
       <CategoryHeader title="Resume" id="header" />
@@ -259,11 +253,9 @@ export default function Resume() {
           </a>
         </p>
         <br />
-        <p className="tiny-text">Updated Mar 28, 2021</p>
+        <p className="tiny-text">Updated Apr 28, 2021</p>
         <br />
-        <div className="container">
-          <i className="fas fa-arrow-circle-up fa-4x" onClick={scrollToTop}></i>
-        </div>
+        <ScrollToTop />
       </section>
     </div>
   )

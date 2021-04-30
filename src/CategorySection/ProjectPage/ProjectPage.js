@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
+import ScrollToTop from "../../Components/ScrollToTop"
 
 export default function ProjectPage() {
   const { projectId } = useParams()
@@ -37,7 +38,8 @@ export default function ProjectPage() {
           id="project-content"
           data-aos="fade-up"
         >
-          {project.caption}
+          <div dangerouslySetInnerHTML={{ __html: project.caption }} />
+          <br />
           <h3 className="justify" data-aos="fade-up">
             <a href={project.repo_url} rel="noreferrer" target="_blank">
               Github Repo &rarr;
@@ -45,6 +47,7 @@ export default function ProjectPage() {
           </h3>
         </section>
       </div>
+      <ScrollToTop />
     </main>
   )
 }
