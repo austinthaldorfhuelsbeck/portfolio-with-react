@@ -1,6 +1,5 @@
 import React from "react"
 import CategoryHeader from "../CategorySection/CategoryHeader"
-import ScrollToTop from "../Components/ScrollToTop.js"
 import "./resume.css"
 
 export default function Resume() {
@@ -255,7 +254,6 @@ export default function Resume() {
         <br />
         <p className="tiny-text">Updated Apr 28, 2021</p>
         <br />
-        <ScrollToTop />
       </section>
     </div>
   )

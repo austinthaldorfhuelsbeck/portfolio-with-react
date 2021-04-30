@@ -8,10 +8,7 @@ export default function ScrollToTop() {
 
   return (
     <div className="flex-container">
-      <i
-        className="fas fa-arrow-circle-up fa-4x mx-auto"
-        onClick={scrollToTop}
-      ></i>
+      <i className="fas fa-arrow-circle-up fa-3x" onClick={scrollToTop}></i>
     </div>
   )
 }

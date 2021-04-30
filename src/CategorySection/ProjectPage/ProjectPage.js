@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
-import ScrollToTop from "../../Components/ScrollToTop"
 
 export default function ProjectPage() {
   const { projectId } = useParams()
@@ -61,7 +60,6 @@ export default function ProjectPage() {
           </h3>
         </section>
       </div>
-      <ScrollToTop />
     </main>
   )
 }
