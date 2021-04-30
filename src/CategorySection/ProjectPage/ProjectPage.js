@@ -4,7 +4,7 @@ import ScrollToTop from "../../Components/ScrollToTop"
 
 export default function ProjectPage() {
   const { projectId } = useParams()
-  const API_URL = "https://portfolio-api-nine.vercel.app"
+  const API_URL = "https://portfolio-api-nine.vercel.app/projects"
   const [project, setProject] = useState({})
   const [technologies, setTechnologies] = useState([])
 

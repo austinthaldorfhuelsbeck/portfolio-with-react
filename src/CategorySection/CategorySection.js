@@ -7,7 +7,7 @@ import "../stars.css"
 export default function CategorySection() {
   const url = useRouteMatch().url
   const { category } = useParams()
-  const API_URL = "https://portfolio-api-nine.vercel.app"
+  const API_URL = "https://portfolio-api-nine.vercel.app/projects/category"
 
   const [projects, setProjects] = useState([])
 
