@@ -1,5 +1,10 @@
 import React, { useEffect } from "react"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import {
+  Redirect,
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom"
 
 import CategorySection from "./CategorySection/CategorySection"
 import About from "./About/About"
@@ -30,6 +35,9 @@ export default function App() {
         <div className="content">
           <NavBar pages={pages} />
           <Switch>
+            <Route exact path="/">
+              <Redirect to="/apps" />
+            </Route>
             <Route exact path="/about">
               <About />
             </Route>
