@@ -2,7 +2,8 @@
 
 html {
   height: 100%;
-  background: #333a4b;
+  background: rgb(226, 226, 226);
+  /* background: #333a4b; */
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -19,7 +20,7 @@ body {
 body, button {
   font-size: 100%;
   font-family: "Titillium Web", Raleway, sans-serif;
-  color: #fff;
+  color: #000;
   background: none;
   border: none;
 }
@@ -183,6 +184,7 @@ nav li {
 .category-header { text-align: center; }
 .category-header h1 { margin: 0; }
 .category-header p { color: #5b78a6; }
+.project-content a { color: #222; }
 
 /* --- Justified & Centered paragraph text --- */
 
@@ -273,7 +275,7 @@ footer ul { padding: 0; }
 
 html {
   margin: 0 auto;
-  background: radial-gradient(ellipse at center, #18212d 0%, #0d0e16 100%);
+  /* background: radial-gradient(ellipse at center, #18212d 0%, #0d0e16 100%); */
   /* padding: 1rem; */
 }
 

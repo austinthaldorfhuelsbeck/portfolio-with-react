@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { Switch, Route, Link, useParams, useRouteMatch } from "react-router-dom"
 import CategoryHeader from "./CategoryHeader"
 import ProjectPage from "../CategorySection/ProjectPage/ProjectPage"
-import "../stars.css"
+// import "../stars.css"
 
 export default function CategorySection() {
   const url = useRouteMatch().url

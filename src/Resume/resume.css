@@ -1,6 +1,7 @@
-html { height: 200vw; }
+/* html { height: 200vw; } */
 
 .resume-title { padding: 1rem 0 2rem; }
+.resume-title a { color: #222; }
 
 .resume-section { padding: 1rem 0; }
 
@@ -18,7 +19,8 @@ html { height: 200vw; }
 .resume-section h2 { font-size: 1.2em; }
 .resume-section p {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 100;
+  font-weight: 500;
+  color: #222;
 }
 
 .row { 

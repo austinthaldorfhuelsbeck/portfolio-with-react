@@ -1,6 +1,6 @@
 import React from "react"
 import CategoryHeader from "../CategorySection/CategoryHeader"
-import "../stars.css"
+// import "../stars.css"
 
 export default function About() {
   const url =

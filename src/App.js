@@ -21,7 +21,7 @@ export default function App() {
   }, [])
 
   //// DATA ////
-  const pages = ["apps", "thinkful", "sites", "about", "resume"]
+  const pages = ["apps", "thinkful", "about", "resume"]
   const socials = {
     GitHub: "https://github.com/austinthaldorfhuelsbeck",
     Twitter: "https://twitter.com/blackmetallotus",
