@@ -184,7 +184,8 @@ nav li {
 .category-header { text-align: center; }
 .category-header h1 { margin: 0; }
 .category-header p { color: #5b78a6; }
-.project-content a { color: #222; }
+.project-content a, .about-caption a { color: #222; }
+.project-content a:hover, .about-caption a:hover { color: #fff; }
 
 /* --- Justified & Centered paragraph text --- */
 
