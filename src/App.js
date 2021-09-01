@@ -25,7 +25,6 @@ export default function App() {
   const socials = {
     GitHub: "https://github.com/austinthaldorfhuelsbeck",
     Twitter: "https://twitter.com/blackmetallotus",
-    Facebook: "https://www.facebook.com/austin.huelsbeck",
     LinkedIn: "https://www.linkedin.com/in/austinhuelsbeck",
   }
 
