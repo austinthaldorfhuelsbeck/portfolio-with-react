@@ -85,7 +85,7 @@ p { line-height: 1.5; }
   align-items: center;
   height: 100%;
   width: 95%;
-  background: #222733;
+  background: #222;
 }
 
 nav ul {
@@ -269,7 +269,7 @@ footer ul { padding: 0; }
 /* --- Custom Classes --- */
 
 .circle-img { border-radius: 50%; }
-.darkened { filter: brightness(50%); }
+.darkened { filter: brightness(70%); }
 .md-img { width: 12em; }
 .inline { display: inline; }
 
