@@ -8,7 +8,7 @@ export default function Resume() {
       <CategoryHeader title="Resume" id="header" />
 
       <a
-        href="https://docs.google.com/document/d/1zLqJy7qyC65LjqLkpDXMwgbzHBtSVkBTf5zUWdQEAko/edit?usp=sharing"
+        href="https://docs.google.com/document/d/1NZ-gK5kMpuWhI7MbvdipvCW1ibbyXGya7JgyOwxJ7Y4/edit?usp=sharing"
         target="_blank"
         rel="noreferrer"
       >
@@ -18,11 +18,11 @@ export default function Resume() {
       <section className="resume-section">
         <div className="row row-pad">
           <p data-aos="fade-up">
-            Full-stack web developer who is proficient in HTML, CSS, SQL, and
-            JavaScript with React and Node.js. My approach to development is
+            Full-stack web developer who is proficient in HTML, CSS, and
+            JavaScript with React.js and Node.js. My approach to development is
             informed by over ten years of experience in audio engineering and
             cinematography. Digital marketing specialist with startup experience
-            and an interest in design.
+            and an interest in web design, digital media, and accessibility.
           </p>
         </div>
 
@@ -32,10 +32,22 @@ export default function Resume() {
         <div className="row row-pad">
           <div className="col" data-aos="fade-up">
             <ul>
-              <li>Digital Marketing</li>
-              <li>Adobe CC</li>
-              <li>Wordpress</li>
+              <li>Web Development</li>
+              <li>JavaScript ES6</li>
+              <li>HTML5 &amp; CSS3</li>
+              <li>Git &amp; GitHub</li>
               <li>AWS &amp; GCP</li>
+              <li>REST API</li>
+            </ul>
+          </div>
+          <div className="col" data-aos="fade-up">
+            <ul>
+              <li>SQL</li>
+              <li>Postgres</li>
+              <li>VSCode</li>
+              <li>Continuous Deployment</li>
+              <li>Unit Testing</li>
+              <li>Data Structures &amp; Algorithms</li>
             </ul>
           </div>
           <div className="col" data-aos="fade-up">
@@ -43,7 +55,9 @@ export default function Resume() {
               <li>Filmmaking</li>
               <li>Podcasting</li>
               <li>Sound Design</li>
-              <li>Music Production</li>
+              <li>Webflow</li>
+              <li>Adobe CC</li>
+              <li>Google Analytics</li>
             </ul>
           </div>
         </div>
@@ -60,12 +74,12 @@ export default function Resume() {
             </div>
             <div className="row row-pad" data-aos="fade-up">
               <a title="The Seattle School" href="http://theseattleschool.edu">
-                <h2>The Seattle School of Theology &amp; Psychology</h2>
+                <h2>Multimedia Specialist</h2>
               </a>
-              <h3>Multimedia Specialist</h3>
+              <h3>The Seattle School of Theology &amp; Psychology</h3>
               <p>
-                Conceptualized, filmed, and edited dozens of original commercial
-                and donor-forward videos representing the institution’s brand
+                Grew a library of commercial and donor-forward videos from a
+                handful to 100+
               </p>
               <p>
                 Recorded, edited, and distributed 100+ episodes of a weekly
@@ -86,9 +100,9 @@ export default function Resume() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <h2>Zero To Sixty by AGD Entertainment</h2>
+                <h2>Creative Director</h2>
               </a>
-              <h3>Creative Director</h3>
+              <h3>Zero To Sixty by AGD Entertainment</h3>
               <p>
                 Launched over twenty new artists’ debut albums by creating
                 original album art, promo photos, music videos, and animations
@@ -128,23 +142,25 @@ export default function Resume() {
             <div className="row" data-aos="fade-up">
               <p>2016&ndash;2018</p>
             </div>
-            <div className="row" data-aos="fade-up">
+            <div className="row row-pad" data-aos="fade-up">
               <a
                 title="Worship Online"
-                href="http://worshiponline.com"
+                href="https://worshiponline.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                <h2>Worship Online</h2>
+                <h2>Video Editor</h2>
               </a>
-            </div>
-            <div className="row row-pad" data-aos="fade-up">
-              <h3>Digital Marketing</h3>
+              <h3>Worship Online</h3>
               <p>
-                Developed core operations of a brand new startup to help grow it
-                from two employees to over forty
+                Launched a new business idea by developing core operations as
+                one of the first employees at a startup
               </p>
-              <p>Launched social media channels now with 50,000+ followers</p>
+              <p>
+                Led the team in designing and implementing a system to produce
+                original visual content for the product, marketing videos,
+                social media content, and a weekly podcast
+              </p>
             </div>
           </div>
         </div>
@@ -252,7 +268,7 @@ export default function Resume() {
           </a>
         </p>
         <br />
-        <p className="tiny-text">Updated Apr 28, 2021</p>
+        <p className="tiny-text">Updated Sept 1, 2021</p>
         <br />
       </section>
     </div>
